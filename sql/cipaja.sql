@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
@@ -155,3 +155,7 @@ ALTER TABLE `usuario`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+alter table administrador convert to character set utf8 collate utf8_unicode_ci;
+alter table candidatura convert to character set utf8 collate utf8_unicode_ci;
+alter table cipa convert to character set utf8 collate utf8_unicode_ci;
+alter table usuario convert to character set utf8 collate utf8_unicode_ci;
