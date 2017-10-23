@@ -1,3 +1,14 @@
+function imprimeNotificacao(mensagem, tipo){
+
+	$.notify(mensagem, {
+        globalPosition: "top right",
+        showDuration: 400,
+        className: tipo,
+        gap: 2
+    });
+}
+
+
 /* Notify.js - http://notifyjs.com/ Copyright (c) 2015 MIT */
 (function (factory) {
 	// UMD start
