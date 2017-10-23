@@ -9,3 +9,12 @@ Entrega para 23/10/2017
 - [ ] Protótipo funcionando
   - [ ] Verificar a programação em PHP
   - [ ] Criar uma base de dados de homologação, para testes.
+  
+  
+  
+  # Instalação:
+  
+  1 - Baixar o Xampp https://www.apachefriends.org/download.html
+  2 - Baixar a pasta do projeto e descompactar em C:\xampp\htdocs
+  3 - Importar o .sql do cipaja.sql no banco do mysql
+  4 - Ser feliz
