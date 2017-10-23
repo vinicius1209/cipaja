@@ -89,6 +89,7 @@ if (!$usuario instanceof \Administrador){
         </div>
     </div>
 </div>
+<script src="./../js/notify.js"></script>
 <script type="text/javascript">
     function desconectar(){
         $.ajax({
@@ -115,9 +116,9 @@ if (!$usuario instanceof \Administrador){
             success: function(retorno){
                 retorno = JSON.parse(retorno);
                 if(retorno["tipo"] == "erro"){
-                    alert(retorno["mensagem"]);
-                } else{
-                    alert(retorno["mensagem"]);
+					imprimeNotificacao(retorno["mensagem"], "error");
+                } else{			
+					imprimeNotificacao("Cipa cadastrada com sucesso!", "success");
                 }
             }
         });
