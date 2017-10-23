@@ -6,6 +6,7 @@
 
 <head>
     <title>Bem-vindo!</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="assets/jquery/jquery.min.js"></script>
@@ -26,7 +27,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="simulacao.html">Simulação</a></li>
+                <?php if ($usuario instanceof \Administrador): ?>
                 <li><a href="./html/cadastra_votacao.php">Cadastro Votação</a></li>
+                <?php endif; ?>
                 <li><a href="votacao.html">Votação</a></li>
                 <li><a href="importacao.html">Funcionários</a></li>
                 <li><a href="divulgacao.html">Resultados</a></li>
@@ -39,7 +42,7 @@
 <script type="text/javascript">
     function desconectar(){
         $.ajax({
-            method: "POST",
+            type: "POST",
             url: "request/desconectar.php",
             success: function(){
                 location.href = "login.php";

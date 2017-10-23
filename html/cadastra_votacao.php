@@ -1,5 +1,8 @@
 <?php
 require_once __DIR__."/../session.php";
+if (!$usuario instanceof \Administrador){
+    header("location: ./../index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="br">
@@ -7,7 +10,9 @@ require_once __DIR__."/../session.php";
 <head>
     <title>Bem-vindo!</title>
     <link rel="stylesheet" href="../assets/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/jquery/jquery-ui/jquery-ui.css">
     <script src="../assets/jquery/jquery.min.js"></script>
+    <script src="../assets/jquery/jquery-ui/jquery-ui.js"></script>
     <script src="../assets/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -51,25 +56,31 @@ require_once __DIR__."/../session.php";
                 <!-- Lista de opções -->
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <label>Data de Início</label>
-                        <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                        <label>Início da votação</label>
+                        <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="iniciovotacao" name="iniciovotacao">
                     </li>
                     <li class="list-group-item">
-                        <label>Data de Término</label>
-                        <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                        <label>Término da votação</label>
+                        <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminovotacao" name="terminovotacao">
+                    </li>
+                    <li class="list-group-item">
+                        <label>Início da candidatura</label>
+                        <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="iniciocandidatura" name="inicio">
+                    </li>
+                    <li class="list-group-item">
+                        <label>Término da candidatura</label>
+                        <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminocandidatura" name="terminocandidatura">
                     </li>
                     <li class="list-group-item">
                         <input type="file" id="uploadEdital" class="hide" />
                         <span class="glyphicon glyphicon-open-file"></span>
                         <label for="uploadEdital" class="btn btn-large">Enviar Edital</label>
-                        <div class="material-switch pull-right">
-                            <a class="btn btn-info" href="#">Upload</a>
-                        </div>
+                        <span id="editalNome"></span>
                     </li>
                     <li class="list-group-item">
                         <button type="button" class="btn btn-danger">Cancelar</button>
                         <div class="material-switch pull-right">
-                            <a class="btn btn-success" href="votacao.html">Confirmar</a>
+                            <button class="btn btn-success">Confirmar</button>
                         </div>
                     </li>
                 </ul>
@@ -82,17 +93,44 @@ require_once __DIR__."/../session.php";
     function desconectar(){
         $.ajax({
             method: "POST",
-            url: "request/desconectar.php",
+            url: "../request/desconectar.php",
             success: function(){
-                location.href = "login.php";
+                location.href = "../login.php";
             }
         });
     }
     $("#cadastrar-votacao").on("submit", function(){
+        var data = new FormData();
+        data.append("iniciocandidatura", $("#iniciocandidatura").val());
+        data.append("terminocandidatura", $("#terminocandidatura").val());
+        data.append("iniciovotacao", $("#iniciovotacao").val());
+        data.append("terminovotacao", $("#terminovotacao").val());
+        data.append("edital[]", document.getElementById("uploadEdital").files[0]);
         $.ajax({
-            
+            type: "post",
+            url: "../request/cadastrarVotacao.php",
+            processData: false,
+            contentType: false,
+            data: data,
+            success: function(retorno){
+                retorno = JSON.parse(retorno);
+                if(retorno["tipo"] == "erro"){
+                    alert(retorno["mensagem"]);
+                } else{
+                    alert(retorno["mensagem"]);
+                }
+            }
         });
         return false;
+    });
+    $(function(){
+        $(".date").datepicker({
+            dateFormat: "dd/mm/yy"
+        });
+        $("#uploadEdital").on("change", function(){
+            var arquivo = document.getElementById("uploadEdital").files[0].name;
+            $("#editalNome").html(arquivo);
+        });
     });
 </script>
 </body>

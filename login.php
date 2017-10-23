@@ -58,7 +58,7 @@
         <script type="text/javascript">
             $("#login-form").on("submit", function(){
                 $.ajax({
-                    method: "post",
+                    type: "post",
                     url: "request/login.php",
                     data: {matricula: $("#matricula").val(), senha: $("#senha").val()},
                     success: function(retorno){
