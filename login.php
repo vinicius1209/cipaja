@@ -55,6 +55,7 @@
                 </div>
             </div>
         </div>
+		<script type="text/javascript" src="js/notify.js"></script>
         <script type="text/javascript">
             $("#login-form").on("submit", function(){
                 $.ajax({
@@ -66,7 +67,7 @@
                         if (retorno){
                             location.href = "index.php";
                         } else{
-                            alert("Login ou senha incorretos");
+							imprimeNotificacao("Login ou Senha incorreto!", "warn");
                         }
                     }
                 });

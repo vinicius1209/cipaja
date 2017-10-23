@@ -2,7 +2,7 @@
    require_once "session.php";
 ?>
 <!DOCTYPE html>
-<html lang="br">
+<html>
 
 <head>
     <title>Bem-vindo!</title>
