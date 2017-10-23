@@ -1,46 +1,13 @@
-<?php
-   include("config.php");
-   session_start();
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $mymatricula = mysqli_real_escape_string($db,$_POST['matricula']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-
-      echo "Hello world!"; 
-      
-      $sql = "SELECT id FROM usuario WHERE matricula = '$mymatricula' and senha = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-		
-      if($count == 1) {
-         session_register("mymatricula");
-         $_SESSION['login_user'] = $mymatricula;
-         
-         header("location: welcome.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
-?>
 <meta charset="utf-8">
-<html lang="br">
-
+<html lang="pt-br">
 <head>
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css\login.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +19,7 @@
                         <h2 class="text-center"> Bem-Vindo!</h2>
                     </div>
                     <div class="panel-body">
-                        <form>
+                        <form method="post" id = "login-form">
                             <div class="row">
                                 <div class="col-sm-12 col-md-10  col-md-offset-1 ">
                                     <form> 
@@ -61,7 +28,7 @@
                                                 <span class="input-group-addon">
                                                         <i class="glyphicon glyphicon-envelope"></i>
                                                     </span>
-                                                <input class="form-control" placeholder="Matrícula" name="matricula" type="text" autofocus>
+                                                <input class="form-control" placeholder="Matrícula" name="matricula" id="matricula" type="text" autofocus>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -69,7 +36,7 @@
                                                 <span class="input-group-addon">
                                                         <i class="glyphicon glyphicon-asterisk"></i>
                                                     </span>
-                                                <input class="form-control" placeholder="Senha" name="password" type="password" value="">
+                                                <input class="form-control" placeholder="Senha" name="senha" id="senha" type="password" value="">
                                             </div>
                                         </div>
                                         <div class="col-sm-offset-1">
@@ -78,7 +45,7 @@
                                             </label>
                                         </div>
                                         <div class="form-group">
-                                            <button type="submit" method = "post" class="btn btn-lg btn-success btn-block">Entrar</button>
+                                            <button type="submit" class="btn btn-lg btn-success btn-block">Entrar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -88,5 +55,23 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $("#login-form").on("submit", function(){
+                $.ajax({
+                    method: "post",
+                    url: "request/login.php",
+                    data: {matricula: $("#matricula").val(), senha: $("#senha").val()},
+                    success: function(retorno){
+                        retorno = JSON.parse(retorno);
+                        if (retorno){
+                            location.href = "index.php";
+                        } else{
+                            alert("Login ou senha incorretos");
+                        }
+                    }
+                });
+                return false;
+            });
+        </script>
 </body>
 <html>
