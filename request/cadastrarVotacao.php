@@ -46,7 +46,7 @@
     }
 
     $nomeArquivo = md5(microtime().@$arquivos["edital"][0]['tmp_name']);
-    if (!move_uploaded_file($arquivos["edital"][0]['tmp_name'], __DIR__."/../editais/".$nomeArquivo)){
+    if (!move_uploaded_file($arquivos["edital"][0]['tmp_name'], __DIR__."/../editais/".$nomeArquivo.".pdf")){
         $response["tipo"] = "erro";
         $response["mensagem"] = "Ocorreu um erro ao copiar o arquivo.";
         echo json_encode($response);
