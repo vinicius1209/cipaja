@@ -15,6 +15,9 @@ Entrega para 23/10/2017
   # Instalação:
   
   - [x] Baixar o Xampp https://www.apachefriends.org/download.html
-  - [x] Baixar a pasta do projeto e descompactar em C:\xampp\htdocs
+  - [x] Baixar a pasta do projeto 
+  - [x] limpar tudo que existir dentro!! C:\xampp\htdocs
+  - [x] Descompactar em C:\xampp\htdocs
+  - [x] acessar o localhost do phpmyadmin, e criar base de dados 'cipaja'
   - [x] Importar o .sql do cipaja.sql no banco do mysql
   - [x] Abrir no navegador por exemplo : http://localhost/cipaja-master/cipaja-master/html/login.php
