@@ -6,9 +6,9 @@ votos e acabar com o uso de papéis para os votos que ainda é muito frequente n
 pequenas e grandes empresas.
 
 Entrega para 23/10/2017
-- [ ] Protótipo funcionando
-  - [ ] Verificar a programação em PHP
-  - [ ] Criar uma base de dados de homologação, para testes.
+- [x] Protótipo funcionando
+  - [x] Verificar a programação em PHP
+  - [x] Criar uma base de dados de homologação, para testes.
   
   
   
