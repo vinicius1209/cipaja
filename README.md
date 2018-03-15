@@ -10,8 +10,14 @@ Entrega para 23/10/2017
   - [x] Verificar a programação em PHP
   - [x] Criar uma base de dados de homologação, para testes.
   
+Melhorias na Qualidade do Software 2018
+- [ ] Arrumar as entidades no PHP
+- [ ] Refazer as tabelas no banco de dados de acordo com a nova modelagem
+- [ ] Arrumar o Banco de dados no requisito "Desempenho", como ídx
+- [ ] Separar funções de html
+- [ ] Padroniar com MVC - DAO
   
-  
+
   # Instalação:
   
   - [x] Baixar o Xampp https://www.apachefriends.org/download.html
