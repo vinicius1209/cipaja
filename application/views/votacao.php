@@ -40,7 +40,9 @@
                         <td><?= $cipa->id ?></td>
                         <td><?= (new \DateTime($cipa->inicio_votacao))->format('d/m/Y') ?></td>
                         <td><?= (new \DateTime($cipa->fim_votacao))->format('d/m/Y') ?></td>
-                        <td class="text-center"><a class='btn btn-success btn-xs' href="votacao_candidatos.html"><span class="glyphicon glyphicon-edit"></span> Votar</a>
+                        <td><?= anchor("cipa/votar", "Votar", "class='btn btn-success btn-xs'") ?></td>
+                        <!-- force download -->
+                        <td><?= anchor("system/download/".$cipa->edital, "Edital", "class='btn btn-success btn-xs' target='_blank'") ?></td>
 <!--                            <a href="candidatarse.html" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> Candidatar-se</a></td>-->
                     </tr>
                     <?php endforeach; ?>

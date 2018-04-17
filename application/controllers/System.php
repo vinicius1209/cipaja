@@ -50,4 +50,12 @@ class System extends CI_Controller {
         $this->session->sess_destroy();
         $this->load->view('login');
     }
+
+    public function download()
+    {
+        $this->load->helper('download');
+        $arquivo = $this->router->uri->segments[3];
+//        var_dump("application/uploads/".$arquivo);die;
+        force_download(  "application/uploads/".$arquivo, null);
+    }
 }

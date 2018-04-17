@@ -15,6 +15,7 @@ class Cipa extends CI_Controller {
     public function votacao()
     {
         $this->load->model('cipaDAO');
+        $this->load->helper('download');
 
         $this->template["cipas"] = $this->cipaDAO->getCipasEmAndamento();
         $this->load->view('votacao', $this->template);
