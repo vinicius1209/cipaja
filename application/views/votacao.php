@@ -35,14 +35,14 @@
 							<th class="text-center">Ações</th>
 						</tr>
 					</thead>
-                    <?php foreach($cipas->result() as $cipa): ?>
+                    <?php foreach($cipas as $cipa): ?>
                     <tr>
-                        <td><?= $cipa->id ?></td>
-                        <td><?= (new \DateTime($cipa->inicio_votacao))->format('d/m/Y') ?></td>
-                        <td><?= (new \DateTime($cipa->fim_votacao))->format('d/m/Y') ?></td>
-                        <td><?= anchor("cipa/votar", "Votar", "class='btn btn-success btn-xs'") ?></td>
+                        <td><?= $cipa->getId() ?></td>
+                        <td><?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?></td>
+                        <td><?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></td>
+                        <td><?= anchor("cipa/candidatos/".$cipa->getId(), "Votar", "class='btn btn-success btn-xs'") ?></td>
                         <!-- force download -->
-                        <td><?= anchor("system/download/".$cipa->edital, "Edital", "class='btn btn-success btn-xs' target='_blank'") ?></td>
+                        <td><?= anchor("system/download/".$cipa->getEdital(), "Edital", "class='btn btn-success btn-xs' target='_blank'") ?></td>
 <!--                            <a href="candidatarse.html" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> Candidatar-se</a></td>-->
                     </tr>
                     <?php endforeach; ?>
@@ -50,15 +50,14 @@
 			</div>
 		</div>
     </div>
-	<div class="row">
-		<div class="col-md-12 text-center">
-			<div class="chart donut"">
-				<div class="donut-chart" style="width: 200%; height: 200%;" data-percent="0.70" data-title="Votos Necessários"> </div>
-			</div>
-		</div>
-	</div>
-	
-	
+<!--	<div class="row">-->
+<!--		<div class="col-md-12 text-center">-->
+<!--			<div class="chart donut"">-->
+<!--				<div class="donut-chart" style="width: 200%; height: 200%;" data-percent="0.70" data-title="Votos Necessários"> </div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
   <script type="text/javascript">
            $(function () {
 				$('.donut-chart').cssCharts({ type: "donut" }).trigger('show-donut-chart');

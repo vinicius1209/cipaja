@@ -11,16 +11,5 @@
 </head>
 <body>
 <?= $menu ?>
-<script type="text/javascript">
-    function desconectar(){
-        $.ajax({
-            type: "POST",
-            url: "request/desconectar.php",
-            success: function(){
-                location.href = "login.php";
-            }
-        });
-    }
-</script>
 </body>
 </html>
