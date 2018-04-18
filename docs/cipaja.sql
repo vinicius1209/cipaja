@@ -273,6 +273,14 @@ ALTER TABLE `voto`
   ADD CONSTRAINT `fk_usuario_id2` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`);
 COMMIT;
 
+--Vinícius A.M 17/04/18
+--Criação dos indexes pelo uso da CipaDAO, UsuarioDAO
+
+CREATE INDEX cipa_inicio_votacao_idx ON cipa(inicio_votacao);
+CREATE INDEX cipa_fim_votacao_idx ON cipa(fim_votacao);
+
+CREATE INDEX usuario_login_idx ON usuario(matricula, senha);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
