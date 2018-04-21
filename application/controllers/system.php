@@ -9,14 +9,12 @@ class System extends CI_Controller {
     {
         parent::__construct();
         //tentativa de gerar um template aqui
-        $this->load->library('session');
         $this->template["menu"] = $this->load->view('partials/menu', '', true);
         $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
     }
 
     public function index()
 	{
-        $this->load->library('session');
 	    if ($this->session->userdata('usuario')){
             $this->load->view('home', $this->template);
         } else{
@@ -31,7 +29,6 @@ class System extends CI_Controller {
 
     public function autenticar()
     {
-        $this->load->library('session');
         $this->load->model("UsuarioDAO");
 
         $matricula  = $this->input->post("matricula");
@@ -46,7 +43,6 @@ class System extends CI_Controller {
 
     public function desconectar()
     {
-        $this->load->library('session');
         $this->session->sess_destroy();
         $this->load->view('login');
     }

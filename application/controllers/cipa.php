@@ -8,7 +8,6 @@ class Cipa extends CI_Controller {
     {
         parent::__construct();
         //tentativa de gerar um template aqui
-        $this->load->library('session');
         $this->template["menu"] = $this->load->view('partials/menu', '', true);
         $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
     }
@@ -39,6 +38,7 @@ class Cipa extends CI_Controller {
 
         $voto = $this->votoDAO->getNewVoto();
         $voto->getCandidato()->setId($candidato_id);
+        $voto->getCandidato()->getCipa()->setId($cipa_id);
         $voto->getUsuario()->setId($this->template["usuario"]->getId());
         $this->votoDAO->salvarVoto($voto);
     }

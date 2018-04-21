@@ -6,7 +6,6 @@ class UsuarioDAO extends CI_Model
 {
     public function __construct()
     {
-        $this->load->database();
     }
 
     public function getUsuarioByMatriculaAndSenha($matricula, $senha)

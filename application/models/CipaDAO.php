@@ -9,7 +9,6 @@ class CipaDAO extends CI_Model
 {
     public function __construct()
     {
-        $this->load->database();
     }
 
     public function getCipasEmAndamento()
@@ -42,7 +41,8 @@ class CipaDAO extends CI_Model
             $candidato->setMatricula($resultado->matricula);
             $candidato->setNome($resultado->nome);
             $candidato->setSenha($resultado->senha);
-            $candidato->setCipaId($cipa_id);
+            $candidato->setCipa(new CipaEntity());
+            $candidato->getCipa()->setId($resultado->cipa_id);
             $candidatos[] = $candidato;
         }
         return $candidatos;

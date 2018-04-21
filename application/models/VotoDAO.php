@@ -8,7 +8,6 @@ class VotoDAO extends CI_Model
 {
     public function __construct()
     {
-        $this->load->database();
     }
 
     public function getNewVoto()
@@ -23,7 +22,7 @@ class VotoDAO extends CI_Model
 
     public function salvarVoto($voto)
     {
-        $this->db->query("insert into voto(usuario_id, candidato_id, horario_voto) values (?, ?, curdate())",
-            [$voto->getUsuario()->getId(), $voto->getCandidato()->getId()]);
+        $this->db->query("insert into voto(usuario_id, cipa_id, candidato_id, horario_voto) values (?, ?, ?, curdate())",
+            [$voto->getUsuario()->getId(), $voto->getCandidato()->getCipa()->getId(), $voto->getCandidato()->getId()]);
     }
 }

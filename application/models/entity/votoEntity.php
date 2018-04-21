@@ -4,7 +4,26 @@ class VotoEntity
 {
     protected $usuario;
     protected $candidato;
+    protected $cipa;
     protected $horario_voto;
+
+    /**
+     * @return mixed
+     */
+    public function getCipa()
+    {
+        return $this->cipa;
+    }
+
+    /**
+     * @param mixed $cipa
+     */
+    public function setCipa($cipa)
+    {
+        $this->cipa = $cipa;
+        return $this->cipa;
+    }
+
 
     /**
      * @return mixed
