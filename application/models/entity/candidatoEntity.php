@@ -3,23 +3,22 @@ require_once("application/models/entity/usuarioEntity.php");
 
 class CandidatoEntity extends UsuarioEntity
 {
-    protected $cipa_id;
+    protected $cipa;
 
     /**
      * @return mixed
      */
-    public function getCipaId()
+    public function getCipa()
     {
-        return $this->cipa_id;
+        return $this->cipa;
     }
 
     /**
      * @param mixed $cipa_id
      */
-    public function setCipaId($cipa_id)
+    public function setCipa($cipa)
     {
-        $this->cipa_id = $cipa_id;
+        $this->cipa = $cipa;
     }
-
 
 }

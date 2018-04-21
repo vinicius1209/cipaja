@@ -1,0 +1,2 @@
+alter table voto drop FOREIGN key fk_cipa_id2;
+alter table voto drop column cipa_id;

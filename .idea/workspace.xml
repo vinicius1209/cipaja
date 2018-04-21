@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea270e-249f-415d-936b-069363030546" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/models/entity/candidatoEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/entity/cipaEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/entity/usuarioEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/candidatos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/VotoDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/entity/faixaEntity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/entity/votoEntity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Cipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/system.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/cipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/system.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/CipaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CipaDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/UsuarioDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/UsuarioDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/votacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/votacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/entity/candidatoEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/entity/candidatoEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/entity/cipaEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/entity/cipaEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidatos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/candidatos.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,71 +26,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsuarioDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/UsuarioDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="votacao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="candidatos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cipa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CipaDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cipaEntity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
+      <file leaf-file-name="system.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/system.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
@@ -98,20 +35,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuarioEntity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/entity/usuarioEntity.php">
+      <file leaf-file-name="votacao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="332">
+              <caret line="40" column="92" lean-forward="true" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidatoEntity.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="candidatos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidatoEntity.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cipa.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cipaEntity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CipaDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faixaEntity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/entity/faixaEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VotoDAO.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/VotoDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="97" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="votoEntity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/entity/votoEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -131,6 +131,7 @@
       <find>system</find>
       <find>System</find>
       <find>application/models/entity/</find>
+      <find>faixa</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\CodeIgniter-3.1.8\application\config</dir>
@@ -167,19 +168,24 @@
         <option value="$PROJECT_DIR$/application/models/Entity/Cipa.php" />
         <option value="$PROJECT_DIR$/application/models/entity/Cipa.php" />
         <option value="$PROJECT_DIR$/application/models/entity/cipa.php" />
-        <option value="$PROJECT_DIR$/application/views/candidatos.php" />
         <option value="$PROJECT_DIR$/application/controllers/SystemController.php" />
         <option value="$PROJECT_DIR$/application/controllers/systemcontroller.php" />
         <option value="$PROJECT_DIR$/application/controllers/cipacontroller.php" />
         <option value="$PROJECT_DIR$/application/models/entity/candidato.php" />
         <option value="$PROJECT_DIR$/application/models/entity/usuarioEntity.php" />
-        <option value="$PROJECT_DIR$/application/models/entity/cipaEntity.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/application/models/UsuarioDAO.php" />
-        <option value="$PROJECT_DIR$/application/models/CipaDAO.php" />
         <option value="$PROJECT_DIR$/application/views/votacao.php" />
+        <option value="$PROJECT_DIR$/application/models/entity/cipaEntity.php" />
+        <option value="$PROJECT_DIR$/application/models/CipaDAO.php" />
+        <option value="$PROJECT_DIR$/application/models/entity/faixaEntity.php" />
+        <option value="$PROJECT_DIR$/application/models/UsuarioDAO.php" />
+        <option value="$PROJECT_DIR$/application/controllers/system.php" />
+        <option value="$PROJECT_DIR$/application/views/candidatos.php" />
+        <option value="$PROJECT_DIR$/application/models/entity/votoEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/candidatoEntity.php" />
+        <option value="$PROJECT_DIR$/application/controllers/cipa.php" />
+        <option value="$PROJECT_DIR$/application/models/VotoDAO.php" />
       </list>
     </option>
   </component>
@@ -206,7 +212,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -227,6 +233,12 @@
               <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
               <item name="cipaja" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cipaja" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
@@ -302,16 +314,15 @@
       <workItem from="1523817886733" duration="16809000" />
       <workItem from="1523838316045" duration="1271000" />
       <workItem from="1523930078148" duration="3197000" />
-      <workItem from="1524010274527" duration="5748000" />
+      <workItem from="1524010274527" duration="10723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27025000" />
+    <option name="totallyTimeSpent" value="32000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -341,27 +352,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/helpers/download_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2686">
-          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/UsuarioDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -608,73 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="77" column="6" lean-forward="true" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/UsuarioDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -685,10 +612,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="62" column="63" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/UsuarioDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/votacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="40" column="92" lean-forward="true" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/votoEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/faixaEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/VotoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="97" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
         </state>
       </provider>
     </entry>

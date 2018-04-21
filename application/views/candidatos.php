@@ -41,7 +41,7 @@
                 <button class="btn btn-danger">Voltar</button>
             </div>
             <div class="col-md-6">
-                <button class="btn btn-success" id="votar">Votar</button>
+                <button class="btn btn-success" id="votar" data-cipa_id="<?= $cipa_id ?>">Votar</button>
             </div>
         </div>
     </div>
@@ -51,10 +51,15 @@
               placeholder: "Selecione um candidato"
           });
           $("#votar").on("click", function(){
-              var candidato = $("#candidatos").val();
+              var candidato_id = $("#candidatos").val();
+              var cipa_id = $(this).data("cipa_id");
               $.ajax({
-                  type: "POST",
-                  url: "cipa/votar/"+candidato,
+                  type: "post",
+                  url: "<?= site_url("cipa/votar") ?>",
+                  data: {
+                      cipa_id: cipa_id,
+                      candidato_id: candidato_id
+                  },
                   success: function(){
                       // location.href = "login.php";
                   }

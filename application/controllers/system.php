@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require_once("application/models/entity/usuarioEntity.php");
 
 class System extends CI_Controller {
     private $template = [];
@@ -10,7 +11,7 @@ class System extends CI_Controller {
         //tentativa de gerar um template aqui
         $this->load->library('session');
         $this->template["menu"] = $this->load->view('partials/menu', '', true);
-        $this->template["usuario"] = $this->session->userdata('usuario');
+        $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
     }
 
     public function index()
@@ -36,9 +37,8 @@ class System extends CI_Controller {
         $matricula  = $this->input->post("matricula");
         $senha      = $this->input->post("senha");
         $usuario = $this->UsuarioDAO->getUsuarioByMatriculaAndSenha($matricula, $senha);
-
         if ($usuario){
-            $this->session->set_userdata('usuario', $usuario);
+            $this->session->set_userdata('usuario', serialize($usuario));
             echo true;
         }
         echo false;

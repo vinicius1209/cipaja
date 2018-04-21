@@ -4,7 +4,7 @@ class CipaEntity
 {
     protected $id;
     protected $edital;
-    protected $faixa_id;
+    protected $faixa;
     protected $inicio_candidatura;
     protected $fim_candidatura;
     protected $inicio_votacao;
@@ -49,18 +49,18 @@ class CipaEntity
     /**
      * @return mixed
      */
-    public function getFaixaId()
+    public function getFaixa()
     {
-        return $this->faixa_id;
+        return $this->faixa;
     }
 
     /**
      * @param mixed $faixa_id
      * @return CipaController
      */
-    public function setFaixaId($faixa_id)
+    public function setFaixa($faixa)
     {
-        $this->faixa_id = $faixa_id;
+        $this->faixa = $faixa;
         return $this;
     }
 

@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("application/models/entity/cipaEntity.php");
 require_once("application/models/entity/usuarioEntity.php");
 require_once("application/models/entity/candidatoEntity.php");
+require_once("application/models/entity/faixaEntity.php");
 
 class CipaDAO extends CI_Model
 {
@@ -19,11 +20,13 @@ class CipaDAO extends CI_Model
             $cipa = new CipaEntity();
             $cipa->setId($resultado->id);
             $cipa->setEdital($resultado->edital);
-            $cipa->setFaixaId($resultado->faixa_id);
+            $cipa->setFaixa(new FaixaEntity());
             $cipa->setInicioCandidatura($resultado->inicio_candidatura);
             $cipa->setFimCandidatura($resultado->fim_candidatura);
             $cipa->setInicioVotacao($resultado->inicio_votacao);
             $cipa->setFimVotacao($resultado->fim_votacao);
+
+            $cipa->getFaixa()->setId($resultado->faixa_id);
             $cipas[] = $cipa;
         }
         return $cipas;
