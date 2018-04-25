@@ -1,8 +1,0 @@
-alter table voto add column cipa_id int(11);
-alter table voto add constraint fk_cipa_id2 FOREIGN key(cipa_id) REFERENCES cipa(id);
-
-ALTER TABLE `voto`
-  DROP PRIMARY KEY,
-   ADD PRIMARY KEY(
-     `usuario_id`,
-     `cipa_id`);
