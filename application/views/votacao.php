@@ -30,8 +30,8 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>Data de Início</th>
-							<th>Data de Término</th>
+							<th class='text-center'>Data de Início</th>
+							<th class='text-center'>Data de Término</th>
 							<th class="text-center">Ações</th>
 						</tr>
 					</thead>
