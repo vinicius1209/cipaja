@@ -30,8 +30,8 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>Data de Início</th>
-							<th>Data de Término</th>
+							<th class='text-center'>Data de Início</th>
+							<th class='text-center'>Data de Término</th>
 							<th class="text-center">Ações</th>
 						</tr>
 					</thead>
@@ -42,7 +42,7 @@
                         <td><?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></td>
                         <td><?= anchor("cipa/candidatos/".$cipa->getId(), "Votar", "class='btn btn-success btn-xs'") ?></td>
                         <!-- force download -->
-                        <td><?= anchor("system/download/".$cipa->getEdital(), "Edital", "class='btn btn-success btn-xs' target='_blank'") ?></td>
+                        <td><?= anchor("system/download/".$cipa->getEdital(), "Edital", "class='btn btn-info btn-xs' target='_blank'") ?></td>
 <!--                            <a href="candidatarse.html" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> Candidatar-se</a></td>-->
                     </tr>
                     <?php endforeach; ?>

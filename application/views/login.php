@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= link_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css") ?>
-    <?= link_tag("application/libraries/login.css") ?>
+    <?= link_tag("application/third_party/login.css") ?>
     <?= script_tag("application/third_party/jquery/jquery.min.js") ?>
     <?= script_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js") ?>
     <?= script_tag("application/third_party/notify.js") ?>
@@ -63,7 +63,7 @@
                     url: "<?= site_url("system/autenticar") ?>",
                     data: {matricula: $("#matricula").val(), senha: $("#senha").val()},
                     success: function(retorno){
-                        retorno = JSON.parse(retorno);
+						console.log(retorno);
                         if (retorno){
                             location.href = "<?= site_url("system/index") ?>";
                         } else{

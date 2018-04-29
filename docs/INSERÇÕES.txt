@@ -1,0 +1,16 @@
+-- INSERÇÃO DE CADIDATOS PARA A CIPA ATIVA NO MOMENTO
+INSERT INTO `candidato`(`usuario_id`, `cipa_id`) VALUES ('1','12');
+INSERT INTO `candidato`(`usuario_id`, `cipa_id`) VALUES ('2','12');
+
+-- CRIAÇÃO DE VIEW
+create or replace view cipa_voto as 
+	SELECT usuario.nome, 
+	count(candidato_id) votos, 
+	cipa_id 
+FROM 
+	VOTO 
+	INNER JOIN usuario on (usuario.id = candidato_id) 
+where 
+	cipa_id = 12 
+group by cipa_id, usuario.nome 
+order by count(candidato_id)

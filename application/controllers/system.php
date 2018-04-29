@@ -34,7 +34,7 @@ class System extends CI_Controller {
         $matricula  = $this->input->post("matricula");
         $senha      = $this->input->post("senha");
         $usuario = $this->UsuarioDAO->getUsuarioByMatriculaAndSenha($matricula, $senha);
-        if ($usuario){
+        if ($usuario->getId()){
             $this->session->set_userdata('usuario', serialize($usuario));
             echo true;
         }

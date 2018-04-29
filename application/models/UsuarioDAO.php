@@ -11,10 +11,8 @@ class UsuarioDAO extends CI_Model
     public function getUsuarioByMatriculaAndSenha($matricula, $senha)
     {
         $resultados = $this->db->query("select * from usuario where matricula = ? and senha = md5(?)", [$matricula, $senha]);
-
+        $usuario = new UsuarioEntity();
         foreach ($resultados->result() as $resultado) {
-            $usuario = new UsuarioEntity();
-
             $usuario->setId($resultado->id);
             $usuario->setNome($resultado->nome);
             $usuario->setSenha($resultado->senha);
