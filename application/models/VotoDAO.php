@@ -20,9 +20,13 @@ class VotoDAO extends CI_Model
         return $voto;
     }
 
+	/**
+		@var $voto boolean
+	*/
     public function salvarVoto($voto)
     {
-        $this->db->query("insert into voto(usuario_id, cipa_id, candidato_id, horario_voto) values (?, ?, ?, curdate())",
+        $status = $this->db->query("insert into voto(usuario_id, cipa_id, candidato_id, horario_voto) values (?, ?, ?, now())",
             [$voto->getUsuario()->getId(), $voto->getCandidato()->getCipa()->getId(), $voto->getCandidato()->getId()]);
+		return $status;
     }
 }

@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: User
- * Date: 17/04/2018
- * Time: 23:36
- */
 
-class FaixaEntity
+class FaixaEntity implements JsonSerializable
 {
     protected $id;
     protected $efetivos;
@@ -121,6 +115,18 @@ class FaixaEntity
     {
         $this->negocio = $negocio;
         return $this;
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            "id" => $this->id,
+            "efetivos" => $this->efetivos,
+            "suplentes" => $this->suplentes,
+            "inicial" => $this->inicial,
+            "final" => $this->final,
+            "negocio" => $this->negocio
+        ];
     }
 
 

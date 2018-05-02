@@ -1,6 +1,6 @@
 <?php
 
-class CipaEntity
+class CipaEntity implements JsonSerializable
 {
     protected $id;
     protected $edital;
@@ -47,7 +47,7 @@ class CipaEntity
     }
 
     /**
-     * @return mixed
+     * @return FaixaEntity
      */
     public function getFaixa()
     {
@@ -160,5 +160,62 @@ class CipaEntity
         return $this;
     }
 
+    /**
+     * @return array
+     */
+    public function getEfetivos()
+    {
+        return $this->efetivos;
+    }
 
+    /**
+     * @param array $efetivos
+     * @return CipaEntity
+     */
+    public function setEfetivos($efetivos)
+    {
+        $this->efetivos = $efetivos;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSuplentes()
+    {
+        return $this->suplentes;
+    }
+
+    /**
+     * @param array $suplentes
+     * @return CipaEntity
+     */
+    public function setSuplentes($suplentes)
+    {
+        $this->suplentes = $suplentes;
+        return $this;
+    }
+
+    public function addEfetivo(CandidatoEntity $efetivo)
+    {
+        $this->efetivos[] = $efetivo;
+    }
+
+    public function addSuplente(CandidatoEntity $suplente)
+    {
+        $this->suplentes[] = $suplente;
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            "id" => $this->id,
+            "edital" => $this->edital,
+            "faixa" => $this->faixa,
+            "inicio_candidatura" => $this->inicio_candidatura,
+            "fim_candidatura" => $this->fim_candidatura,
+            "inicio_votacao" => $this->inicio_votacao,
+            "fim_votacao" => $this->fim_votacao
+        ];
+    }
 }

@@ -6,7 +6,7 @@
  * Time: 22:10
  */
 
-class UsuarioEntity
+class UsuarioEntity implements JsonSerializable
 {
     protected $id;
     protected $nome;
@@ -23,7 +23,7 @@ class UsuarioEntity
 
     /**
      * @param mixed $id
-     * @return Usuario
+     * @return UsuarioEntity
      */
     public function setId($id)
     {
@@ -41,7 +41,7 @@ class UsuarioEntity
 
     /**
      * @param mixed $nome
-     * @return Usuario
+     * @return UsuarioEntity
      */
     public function setNome($nome)
     {
@@ -59,7 +59,7 @@ class UsuarioEntity
 
     /**
      * @param mixed $matricula
-     * @return Usuario
+     * @return UsuarioEntity
      */
     public function setMatricula($matricula)
     {
@@ -77,7 +77,7 @@ class UsuarioEntity
 
     /**
      * @param mixed $senha
-     * @return Usuario
+     * @return UsuarioEntity
      */
     public function setSenha($senha)
     {
@@ -85,5 +85,13 @@ class UsuarioEntity
         return $this;
     }
 
-
+    public function jsonSerialize()
+    {
+        $cipa = ($this->cipa) ? $this->cipa->getId() : "";
+        return [
+            "id" => $this->getId(),
+            "nome" => $this->getNome(),
+            "matricula" => $this->getMatricula()
+        ];
+    }
 }

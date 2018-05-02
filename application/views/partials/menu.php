@@ -17,7 +17,7 @@
                 <?php //endif; ?>
                 <li><?= anchor("cipa/votacao", "Votação") ?></li>
                 <li><a href="importacao.html">Funcionários</a></li>
-                <li><a href="divulgacao.html">Resultados</a></li>
+                <li><?= anchor("cipa/divulgacao", "Resultados") ?></li>
                 <li><a href="aprovacao_candidatura.html">Candidaturas</a></li>
                 <li><?= anchor("system/desconectar", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
             </ul>

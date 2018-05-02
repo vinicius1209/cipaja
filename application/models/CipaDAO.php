@@ -31,6 +31,26 @@ class CipaDAO extends CI_Model
         return $cipas;
     }
 
+    public function getCipasFinalizadas()
+    {
+        $resultados = $this->db->query("select * from cipa where fim_votacao <= curdate()");
+        $cipas = [];
+        foreach ($resultados->result() as $resultado){
+            $cipa = new CipaEntity();
+            $cipa->setId($resultado->id);
+            $cipa->setEdital($resultado->edital);
+            $cipa->setFaixa(new FaixaEntity());
+            $cipa->setInicioCandidatura($resultado->inicio_candidatura);
+            $cipa->setFimCandidatura($resultado->fim_candidatura);
+            $cipa->setInicioVotacao($resultado->inicio_votacao);
+            $cipa->setFimVotacao($resultado->fim_votacao);
+
+            $cipa->getFaixa()->setId($resultado->faixa_id);
+            $cipas[] = $cipa;
+        }
+        return $cipas;
+    }
+
     public function getCandidatosCipa($cipa_id)
     {
         $resultados = $this->db->query("select usuario.*, candidato.cipa_id from candidato inner join usuario on (candidato.usuario_id = usuario.id) where candidato.cipa_id = ?", [$cipa_id]);
@@ -46,5 +66,37 @@ class CipaDAO extends CI_Model
             $candidatos[] = $candidato;
         }
         return $candidatos;
+    }
+
+
+    public function getCipaById($id)
+    {
+        $resultados = $this->db->query("
+        select
+          cipa.*,
+          faixa.suplentes,
+          faixa.efetivos
+        from
+          cipa
+        inner join
+          faixa on cipa.faixa_id = faixa.id
+        where cipa.id = ?", [$id]);
+
+        $cipa = new CipaEntity();
+        foreach ($resultados->result() as $resultado){
+            $cipa->setId($resultado->id);
+            $cipa->setEdital($resultado->edital);
+            $cipa->setFaixa(new FaixaEntity());
+            $cipa->setInicioCandidatura($resultado->inicio_candidatura);
+            $cipa->setFimCandidatura($resultado->fim_candidatura);
+            $cipa->setInicioVotacao($resultado->inicio_votacao);
+            $cipa->setFimVotacao($resultado->fim_votacao);
+
+            $cipa->getFaixa()->setId($resultado->faixa_id);
+            $cipa->getFaixa()->setSuplentes($resultado->suplentes);
+            $cipa->getFaixa()->setEfetivos($resultado->efetivos);
+        }
+
+        return $cipa;
     }
 }

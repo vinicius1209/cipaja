@@ -9,6 +9,7 @@ class Cipa extends CI_Controller {
         parent::__construct();
         //tentativa de gerar um template aqui
         $this->template["menu"] = $this->load->view('partials/menu', '', true);
+		$this->template["head"] = $this->load->view('partials/headlinks', '', true);
         $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
     }
 
@@ -23,6 +24,7 @@ class Cipa extends CI_Controller {
 
     public function candidatos()
     {
+		$this->load->library('javascript');
         $this->load->model('cipaDAO');
         $cipa_id = $this->router->uri->segments[3];
         $this->template["candidatos"] = $this->cipaDAO->getCandidatosCipa($cipa_id);
@@ -40,6 +42,49 @@ class Cipa extends CI_Controller {
         $voto->getCandidato()->setId($candidato_id);
         $voto->getCandidato()->getCipa()->setId($cipa_id);
         $voto->getUsuario()->setId($this->template["usuario"]->getId());
-        $this->votoDAO->salvarVoto($voto);
+        echo (bool)$this->votoDAO->salvarVoto($voto);
+    }
+
+    public function divulgacao()
+    {
+        $this->load->model('cipaDAO');
+        $this->template["cipas"] = $this->cipaDAO->getCipasFinalizadas();
+        $this->load->view('divulgacao', $this->template);
+    }
+
+    public function vencedores()
+    {
+        $this->load->model('candidatoDAO');
+        $this->load->model('cipaDAO');
+        $cipa_id = $this->input->post("cipa_id");
+        $cipa = $this->cipaDAO->getCipaById($cipa_id);
+        if (empty($cipa->getFaixa())){
+            echo json_encode("Houve um erro ao tentar calcular os resultados");
+            return;
+        }
+        $vencedores = $this->candidatoDAO->getResultadoCipa($cipa);
+
+        $efetivos = [];
+        $suplentes = [];
+        for ($i = 0; $i < $cipa->getFaixa()->getEfetivos(); $i++){
+            $efetivos[] = $vencedores[$i];
+        }
+        for ($i = $cipa->getFaixa()->getEfetivos(); $i < $cipa->getFaixa()->getEfetivos() + $cipa->getFaixa()->getSuplentes(); $i++){
+            $suplentes[] = $vencedores[$i];
+        }
+
+        if (count($efetivos) != $cipa->getFaixa()->getEfetivos()){
+            echo json_encode("Número de efetivos não alcançou o suficiente");
+            return;
+        }
+        if (count($suplentes) != $cipa->getFaixa()->getSuplentes()){
+            echo json_encode("Número de suplentes não alcançou o suficiente");
+            return;
+        }
+        echo(json_encode([
+            "efetivos" => $efetivos,
+            "suplentes" => $suplentes
+        ]));
+        return;
     }
 }
