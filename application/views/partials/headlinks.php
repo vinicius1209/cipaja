@@ -8,3 +8,5 @@
     <?= script_tag("application/third_party/jquery.chart.js") ?>
     <?= link_tag("application/third_party/select2/dist/css/select2.min.css") ?>
     <?= script_tag("application/third_party/select2/dist/js/select2.min.js") ?>
+    <?= link_tag("application/third_party/jquery-ui/jquery-ui.css") ?>
+    <?= script_tag("application/third_party/jquery-ui/jquery-ui.js") ?>

@@ -41,7 +41,7 @@ class System extends CI_Controller {
         echo false;
     }
 
-    public function desconectar()
+    public function desconectarAction()
     {
         $this->session->sess_destroy();
         $this->load->view('login');
