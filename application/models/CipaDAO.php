@@ -99,17 +99,4 @@ class CipaDAO extends CI_Model
 
         return $cipa;
     }
-
-    public function getNewCipa()
-    {
-        return new CipaEntity();
-    }
-
-    public function salvar(CipaEntity $cipa)
-    {
-        $resultado = $this->db->query("insert into cipa(edital, faixa_id, inicio_votacao, fim_votacao, inicio_candidatura, fim_candidatura)
-        values(?, ?, ?, ?, ?, ?)
-        ", [$cipa->getEdital(), 1, $cipa->getInicioVotacao(), $cipa->getFimVotacao(), $cipa->getInicioCandidatura(), $cipa->getFimCandidatura()]);
-        return $resultado;
-    }
 }
