@@ -9,7 +9,8 @@ class System extends CI_Controller {
     {
         parent::__construct();
         //tentativa de gerar um template aqui
-        $this->template["menu"] = $this->load->view('partials/menu', '', true);
+        $this->template["head"] = $this->load->view('partials/headlinks', '', true);
+        $this->template["menu"] = $this->load->view('partials/menu', '', true);      
         $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
     }
 
@@ -18,13 +19,13 @@ class System extends CI_Controller {
 	    if ($this->session->userdata('usuario')){
             $this->load->view('home', $this->template);
         } else{
-            $this->load->view('login');
+            $this->load->view('login',$this->template);
         }
 	}
 
 	public function login()
     {
-        $this->load->view('login');
+        $this->load->view('login',$this->template);
     }
 
     public function autenticar()
@@ -41,10 +42,10 @@ class System extends CI_Controller {
         echo false;
     }
 
-    public function desconectarAction()
+    public function desconectar()
     {
         $this->session->sess_destroy();
-        $this->load->view('login');
+        $this->load->view('login',$this->template);
     }
 
     public function download()
