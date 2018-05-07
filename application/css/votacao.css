@@ -1,0 +1,45 @@
+.votacaoAberta{
+    margin-top: 2em;
+}
+
+.votacao{
+    border-color: #1e820d;
+}
+
+.overlay {
+    position: absolute;
+    margin: 0px 15px 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1e820d;
+  }
+
+  .votacao:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }

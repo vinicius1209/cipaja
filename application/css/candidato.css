@@ -1,0 +1,18 @@
+.candidatoDAO{
+    text-align: center;
+    font-size: 35px;
+}
+
+.containerCandidatos{
+    margin-top: 2em;
+}
+
+.candidatos{
+    opacity: 0.8;
+    border-color: #1e820d;
+}
+
+.candidatos:hover{
+	opacity: 1;
+    cursor: pointer;
+}
