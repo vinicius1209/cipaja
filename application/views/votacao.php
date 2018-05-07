@@ -1,68 +1,45 @@
 <!DOCTYPE html>
 <html lang="br">
 
-<head>
-    <title>Votação</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= link_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css") ?>
-    <?= link_tag("application/third_party/cssCharts.css") ?>
-    <?= link_tag("application/libraries/simulacao.css") ?>
-    <?= script_tag("application/third_party/jquery/jquery.min.js") ?>
-    <?= script_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js") ?>
-    <?= script_tag("application/third_party/notify.js") ?>
-    <?= script_tag("application/third_party/jquery.chart.js") ?>
-</head>
+    <head>
+        <title>Votação</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?= $head ?>
+    </head>
 
-<body>
-    <?= $menu ?>
-	<div class="container">
-        <h3 class="text-center">Votação em Andamento</h3>
-        <hr>
-        <div class="col-xs-12">
-        </div>
-    </div>
-
-    <div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<table class="table table-striped custab">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th class='text-center'>Data de Início</th>
-							<th class='text-center'>Data de Término</th>
-							<th class="text-center">Ações</th>
-						</tr>
-					</thead>
+    <body>
+        <?= $menu ?>
+        <div class="container votacaoAberta">
+            <div class="row">
+                <div class="col-md-12 text-center">                
                     <?php foreach($cipas as $cipa): ?>
-                    <tr>
-                        <td><?= $cipa->getId() ?></td>
-                        <td><?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?></td>
-                        <td><?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></td>
-                        <td><?= anchor("cipa/candidatos/".$cipa->getId(), "Votar", "class='btn btn-success btn-xs'") ?></td>
-                        <!-- force download -->
-                        <td><?= anchor("system/download/".$cipa->getEdital(), "Edital", "class='btn btn-info btn-xs' target='_blank'") ?></td>
-<!--                            <a href="candidatarse.html" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> Candidatar-se</a></td>-->
-                    </tr>
-                    <?php endforeach; ?>
-				</table>    
-			</div>
-		</div>
-    </div>
-<!--	<div class="row">-->
-<!--		<div class="col-md-12 text-center">-->
-<!--			<div class="chart donut"">-->
-<!--				<div class="donut-chart" style="width: 200%; height: 200%;" data-percent="0.70" data-title="Votos Necessários"> </div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-
-  <script type="text/javascript">
-           $(function () {
-				$('.donut-chart').cssCharts({ type: "donut" }).trigger('show-donut-chart');
-          });
-  </script>
-
-</body>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="thumbnail votacao">    
+                                <div class="row">                    
+                                    <div class="col-md-12">
+                                        <img src="<?php echo base_url('img/votacao.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                                        <div class="caption overlay">
+                                            <p class="text"> Data de Início: <?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?> </p>
+                                            <p class="text2"> Data de Término: <?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?> </p>
+                                        </div>
+                                    </div>
+                                </div>                            
+                                <div class="row">
+                                    <div class="col-md-6"> 
+                                        <?= anchor("system/download/".$cipa->getEdital(), "Edital", "class='btn btn-info btn-block' target='_blank'") ?>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <?= anchor("cipa/candidatos/".$cipa->getId(), 'Votar', 'class="btn btn-success btn-block"' ) ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>   
+                </div>                
+            </div>
+        </div>   
+    </body>
 <html>

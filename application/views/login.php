@@ -1,14 +1,10 @@
-<meta charset="utf-8">
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="br">
 <head>
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= link_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css") ?>
-    <?= link_tag("application/third_party/login.css") ?>
-    <?= script_tag("application/third_party/jquery/jquery.min.js") ?>
-    <?= script_tag("application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js") ?>
-    <?= script_tag("application/third_party/notify.js") ?>
+    <?= $head ?> 
 </head>
 
 <body>
@@ -40,11 +36,6 @@
                                                 <input class="form-control" placeholder="Senha" name="senha" id="senha" type="password" value="">
                                             </div>
                                         </div>
-                                        <div class="col-sm-offset-1">
-                                            <label class="checkbox">
-                                            <input type="checkbox" value="Lembrar-me"> Lembrar-me
-                                            </label>
-                                        </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-lg btn-success btn-block">Entrar</button>
                                         </div>
@@ -63,11 +54,10 @@
                     url: "<?= site_url("system/autenticar") ?>",
                     data: {matricula: $("#matricula").val(), senha: $("#senha").val()},
                     success: function(retorno){
-						console.log(retorno);
                         if (retorno){
                             location.href = "<?= site_url("system/index") ?>";
                         } else{
-							imprimeNotificacao("Login ou Senha incorreto!", "warn");
+							imprimeNotificacao('erro', 'Usuário ou Senha incorretos!');
                         }
                     }
                 });

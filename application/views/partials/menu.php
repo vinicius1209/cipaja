@@ -1,6 +1,5 @@
-<?= link_tag("application/libraries/menu.css") ?>
+<?= link_tag("application/css/menu.css") ?>
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
@@ -13,14 +12,13 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="simulacao.html">Simulação</a></li>
                 <?php //if ($usuario instanceof \Administrador): ?>
-                <li><?= anchor("cipa/cadastrarAction", "Cadastrar Votação") ?></li>
+                <li><a href="./html/cadastra_votacao.php">Cadastro Votação</a></li>
                 <?php //endif; ?>
-                <li><?= anchor("cipa/votacaoAction", "Votação") ?></li>
+                <li><?= anchor("cipa/votacao", "Votação") ?></li>
                 <li><a href="importacao.html">Funcionários</a></li>
-                <li><?= anchor("cipa/divulgacaoAction", "Resultados") ?></li>
+                <li><?= anchor("cipa/divulgacao", "Resultados") ?></li>
                 <li><a href="aprovacao_candidatura.html">Candidaturas</a></li>
-                <li><?= anchor("system/desconectarAction", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
+                <li><?= anchor("system/desconectar", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
             </ul>
         </div>
-    </div>
 </nav>
