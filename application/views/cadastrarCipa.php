@@ -40,6 +40,18 @@
                                 <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminocandidatura" name="terminocandidatura">
                             </li>
                             <li class="list-group-item">
+                                <label>Número de funcionários</label>
+                                <input type="number" class="form-control" id="numerofuncionarios" name="numerofuncionarios" min="1">
+                            </li>
+                            <li class="list-group-item">
+                                <label>Negócio</label>
+                                <select class="form-control" name="negocio" id="negocio">
+                                    <?php foreach($negocios as $negocio): ?>
+                                        <option value="<?= $negocio->getId()?>"><?= $negocio->getArea() ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </li>
+                            <li class="list-group-item">
                                 <input type="file" id="uploadEdital" class="hide" />
                                 <span class="glyphicon glyphicon-open-file"></span>
                                 <label for="uploadEdital" class="btn btn-large">Enviar Edital</label>
@@ -65,6 +77,8 @@
               data.append("terminocandidatura", $("#terminocandidatura").val());
               data.append("iniciovotacao", $("#iniciovotacao").val());
               data.append("terminovotacao", $("#terminovotacao").val());
+              data.append("numerofuncionarios", $("#numerofuncionarios").val());
+              data.append("negocio", $("#negocio").val());
               data.append("edital[]", document.getElementById("uploadEdital").files[0]);
               $.ajax({
                   type: "post",
@@ -74,8 +88,8 @@
                   data: data,
                   success: function(retorno){
                       retorno = JSON.parse(retorno);
-                      if(retorno["tipo"] == "erro"){
-                          imprimeNotificacao(retorno["mensagem"], "error");
+                      if(retorno.tipo === "erro"){
+                          imprimeNotificacao(retorno.mensagem, "error");
                       } else{
                           imprimeNotificacao("Cipa cadastrada com sucesso!", "success");
                       }

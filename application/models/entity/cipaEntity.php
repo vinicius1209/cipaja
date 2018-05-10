@@ -9,6 +9,8 @@ class CipaEntity implements JsonSerializable
     protected $fim_candidatura;
     protected $inicio_votacao;
     protected $fim_votacao;
+    protected $efetivos = [];
+    protected $suplentes = [];
 
     /**
      * @return mixed

@@ -99,4 +99,23 @@ class CipaDAO extends CI_Model
 
         return $cipa;
     }
+
+    public function getNewCipa()
+    {
+        return new CipaEntity();
+    }
+
+    public function salvar(CipaEntity $cipa)
+    {
+        $votacoes = $this->db->query("select * from cipa where date(inicio_votacao) >= date(?) and date(fim_votacao) <= date(?)", [$cipa->getInicioVotacao(), $cipa->getFimVotacao()]);
+        $cipaAndamento = [];
+        foreach ($votacoes->result() as $votacao){
+            //há uma cipa em andamento
+            return false;
+        }
+        $resultado = $this->db->query("insert into cipa(edital, faixa_id, inicio_votacao, fim_votacao, inicio_candidatura, fim_candidatura)
+        values(?, ?, ?, ?, ?, ?)
+        ", [$cipa->getEdital(), $cipa->getFaixa()->getId(), $cipa->getInicioVotacao(), $cipa->getFimVotacao(), $cipa->getInicioCandidatura(), $cipa->getFimCandidatura()]);
+        return $resultado;
+    }
 }
