@@ -19,7 +19,7 @@
                 <li><a href="importacao.html">Funcionários</a></li>
                 <li><?= anchor("cipa/divulgacaoAction", "Resultados") ?></li>
                 <li><?= anchor("cipa/candidaturasAction", "Candidaturas") ?></li>
-                <li><?= anchor("system/desconectarAction", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
+                <li><?= anchor("system/desconectar", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
             </ul>
         </div>
     </div>
