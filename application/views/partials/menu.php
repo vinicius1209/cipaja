@@ -18,7 +18,7 @@
                 <li><?= anchor("cipa/votacaoAction", "Votação") ?></li>
                 <li><a href="importacao.html">Funcionários</a></li>
                 <li><?= anchor("cipa/divulgacaoAction", "Resultados") ?></li>
-                <li><a href="aprovacao_candidatura.html">Candidaturas</a></li>
+                <li><?= anchor("cipa/candidaturasAction", "Candidaturas") ?></li>
                 <li><?= anchor("system/desconectarAction", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>
             </ul>
         </div>

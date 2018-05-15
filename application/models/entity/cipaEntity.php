@@ -11,6 +11,7 @@ class CipaEntity implements JsonSerializable
     protected $fim_votacao;
     protected $efetivos = [];
     protected $suplentes = [];
+    protected $candidatos = [];
 
     /**
      * @return mixed
@@ -219,5 +220,22 @@ class CipaEntity implements JsonSerializable
             "inicio_votacao" => $this->inicio_votacao,
             "fim_votacao" => $this->fim_votacao
         ];
+    }
+
+    public function addCandidato(\CandidatoEntity $candidatoEntity)
+    {
+        $this->candidatos[] = $candidatoEntity;
+        return $this;
+    }
+
+    public function setCandidatos($candidatos)
+    {
+        $this->candidatos = $candidatos;
+        return $this;
+    }
+
+    public function getCandidatos()
+    {
+        return $this->candidatos;
     }
 }

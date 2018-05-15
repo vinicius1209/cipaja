@@ -118,4 +118,41 @@ class CipaDAO extends CI_Model
         ", [$cipa->getEdital(), $cipa->getFaixa()->getId(), $cipa->getInicioVotacao(), $cipa->getFimVotacao(), $cipa->getInicioCandidatura(), $cipa->getFimCandidatura()]);
         return $resultado;
     }
+
+
+    public function getCandidatosPorCipa()
+    {
+        $cipas = [];
+        $resultados = $this->db->query(
+            "select
+                cipa.*, usuario.nome
+            from
+                cipa
+                left join candidato on candidato.cipa_id = cipa.id
+                left join usuario on usuario.id = candidato.usuario_id
+            "
+        );
+
+        if (empty($resultados)){
+            return [];
+        }
+        foreach ($resultados->result() as $resultado){
+            if (empty($cipas[$resultado->id])){
+                $cipa = new CipaEntity();
+                $cipa->setId($resultado->id)
+                    ->setInicioCandidatura($resultado->inicio_candidatura)
+                    ->setFimCandidatura($resultado->fim_candidatura)
+                    ->setInicioVotacao($resultado->inicio_votacao)
+                    ->setFimVotacao($resultado->fim_votacao);
+                $cipas[$resultado->id] = $cipa;
+            }
+
+            if ($resultado->nome){
+                $candidato = new CandidatoEntity();
+                $candidato->setNome($resultado->nome);
+                $cipas[$resultado->id]->addCandidato($candidato);
+            }
+        }
+        return $cipas;
+    }
 }

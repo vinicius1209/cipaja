@@ -216,4 +216,12 @@ class Cipa extends CI_Controller {
         }
         return $files;
     }
+
+    public function candidaturasAction()
+    {
+        $this->load->model("cipaDAO");
+        $candidatosPorCipa = $this->cipaDAO->getCandidatosPorCipa();
+        $this->template["cipas"] = $candidatosPorCipa;
+        $this->load->view("candidaturas", $this->template);
+    }
 }

@@ -42,4 +42,5 @@ class CandidatoDAO extends CI_Model
         }
         return $vencedores;
     }
+
 }

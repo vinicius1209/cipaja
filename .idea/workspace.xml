@@ -2,720 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea270e-249f-415d-936b-069363030546" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/models/entity/negocioEntity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/candidaturas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/cipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/CandidatoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CandidatoDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/CipaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CipaDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/entity/cipaEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/entity/cipaEntity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/.hound.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/.hound.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/CNAME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/browser-bugs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/browser-bugs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/browser-features.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/browser-features.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/core-team.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/core-team.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/glyphicons.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/glyphicons.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/sass-team.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/sass-team.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/showcase.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/showcase.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/translations.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_data/translations.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/ads.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/ads.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/alerts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/badges.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/breadcrumbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/breadcrumbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/button-dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/button-dropdowns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/button-groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/button-groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/dropdowns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/glyphicons.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/glyphicons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/input-groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/input-groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/jumbotron.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/jumbotron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/labels.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/labels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/list-group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/media.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/navs.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/navs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/page-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/page-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/panels.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/panels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/progress-bars.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/progress-bars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/responsive-embed.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/responsive-embed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/thumbnails.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/thumbnails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/wells.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/components/wells.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/helpers.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/helpers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/images.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/less.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/less.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/responsive-utilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/responsive-utilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/sass.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/sass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/css/type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/customizer-variables.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/customizer-variables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/accessibility.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/browser-device-support.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/browser-device-support.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/community.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/community.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/disabling-responsiveness.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/disabling-responsiveness.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/grunt.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/grunt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/third-party-support.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/third-party-support.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/tools.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/translations.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/translations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/whats-included.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/getting-started/whats-included.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/affix.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/affix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/alerts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/carousel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/collapse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/dropdowns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/popovers.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/popovers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/scrollspy.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/scrollspy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/tooltips.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/tooltips.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/transitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/js/transitions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/customize.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/customize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/getting-started.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/getting-started.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/migration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_includes/nav/migration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_layouts/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_plugins/bridge.rb" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_plugins/bridge.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_plugins/bugify.rb" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_plugins/bugify.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_pug/customizer-nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_pug/customizer-nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/_pug/customizer-variables.pug" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/_pug/customizer-variables.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-outline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-outline.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-punchout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-punchout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/brand/bootstrap-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/docs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/docs.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/docs.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/docs.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/src/docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/src/docs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/src/pygments-manni.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/css/src/pygments-manni.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/flash/ZeroClipboard.swf" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/flash/ZeroClipboard.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/components.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/components.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/devices.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/devices.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-lyft.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-lyft.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-newsweek.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-newsweek.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-riot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-riot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-vogue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/expo-vogue.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/sass-less.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/img/sass-less.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/customize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/customize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/docs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/docs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/raw-files.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/raw-files.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/src/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/src/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/src/customizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/src/customizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/Blob.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/Blob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/FileSaver.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/FileSaver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/ZeroClipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/ZeroClipboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/anchor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/anchor.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/autoprefixer.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/autoprefixer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/holder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/holder.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/jszip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/jszip.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/less.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/less.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/uglify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/assets/js/vendor/uglify.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/browser-bugs.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/browser-bugs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/customize.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/customize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/blog/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/blog/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/carousel/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/carousel/carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/carousel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/carousel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/cover/cover.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/cover/cover.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/cover/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/cover/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/dashboard/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/dashboard/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/dashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/grid/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/grid/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/grid/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron-narrow/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron-narrow/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron-narrow/jumbotron-narrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron-narrow/jumbotron-narrow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron/jumbotron.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/jumbotron/jumbotron.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/justified-nav/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/justified-nav/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/justified-nav/justified-nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/justified-nav/justified-nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-fixed-top/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-fixed-top/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-fixed-top/navbar-fixed-top.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-fixed-top/navbar-fixed-top.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-static-top/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-static-top/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-static-top/navbar-static-top.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar-static-top/navbar-static-top.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/navbar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/non-responsive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/non-responsive/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/non-responsive/non-responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/non-responsive/non-responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/blog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/blog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/carousel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/carousel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/dashboard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/dashboard.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/equal-height-columns.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/equal-height-columns.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/grid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/grid.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/jumbotron-narrow.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/jumbotron-narrow.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/jumbotron.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/jumbotron.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/justified-nav.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/justified-nav.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar-fixed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar-fixed.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar-static.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar-static.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/navbar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/non-responsive.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/non-responsive.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/offcanvas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/offcanvas.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sign-in.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sign-in.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/starter-template.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/starter-template.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer-navbar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer-navbar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/theme.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/screenshots/theme.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/signin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/signin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/signin/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/signin/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/starter-template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/starter-template/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/starter-template/starter-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/starter-template/starter-template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer/sticky-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/sticky-footer/sticky-footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/theme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/theme/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/theme/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/theme/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/getting-started.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/getting-started.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/migration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/migration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/docs/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/docs/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-commonjs-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-commonjs-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-glyphicons-data-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-glyphicons-data-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-lessdoc-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-lessdoc-parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-raw-files-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/bs-raw-files-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/change-version.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/change-version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/configBridge.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/configBridge.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/npm-shrinkwrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/npm-shrinkwrap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/grunt/sauce_browsers.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/grunt/sauce_browsers.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/.jscsrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/.jscsrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/affix.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/affix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/scrollspy.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/scrollspy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/affix.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/affix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/phantom.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/phantom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/scrollspy.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/scrollspy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/unit/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/qunit.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/qunit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/vendor/qunit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/affix-with-sticky-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/affix-with-sticky-footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/affix.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/affix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/button.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/carousel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/collapse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/dropdown.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/popover.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/popover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/scrollspy.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/scrollspy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/tab.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/tooltip.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tests/visual/tooltip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/js/transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/js/transition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/.csscomb.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/.csscomb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/.csslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/.csslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/alerts.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/alerts.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/badges.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/badges.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/bootstrap.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/bootstrap.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/breadcrumbs.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/breadcrumbs.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/button-groups.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/button-groups.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/buttons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/carousel.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/carousel.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/close.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/close.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/code.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/code.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/component-animations.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/component-animations.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/dropdowns.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/dropdowns.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/forms.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/forms.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/glyphicons.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/glyphicons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/grid.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/grid.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/input-groups.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/input-groups.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/jumbotron.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/jumbotron.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/labels.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/labels.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/list-group.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/list-group.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/media.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/media.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/alerts.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/alerts.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/background-variant.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/background-variant.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/border-radius.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/border-radius.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/buttons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/center-block.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/center-block.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/clearfix.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/clearfix.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/forms.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/forms.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/gradients.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/gradients.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/grid-framework.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/grid-framework.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/grid.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/grid.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/hide-text.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/hide-text.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/image.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/image.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/labels.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/labels.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/list-group.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/list-group.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/nav-divider.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/nav-divider.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/nav-vertical-align.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/nav-vertical-align.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/opacity.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/opacity.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/pagination.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/pagination.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/panels.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/panels.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/progress-bar.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/progress-bar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/reset-filter.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/reset-filter.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/reset-text.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/reset-text.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/resize.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/resize.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/responsive-visibility.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/responsive-visibility.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/size.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/size.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/tab-focus.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/tab-focus.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/table-row.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/table-row.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/text-emphasis.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/text-emphasis.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/text-overflow.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/text-overflow.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/vendor-prefixes.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/mixins/vendor-prefixes.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/modals.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/modals.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/navs.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/navs.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/normalize.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/normalize.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/pager.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/pager.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/pagination.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/pagination.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/panels.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/panels.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/popovers.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/popovers.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/print.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/print.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/progress-bars.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/progress-bars.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/responsive-embed.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/responsive-embed.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/responsive-utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/responsive-utilities.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/scaffolding.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/scaffolding.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/tables.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/tables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/thumbnails.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/thumbnails.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/tooltip.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/tooltip.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/type.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/utilities.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/less/wells.less" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/less/wells.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/nuget/MyGet.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/nuget/MyGet.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/nuget/bootstrap.less.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/nuget/bootstrap.less.nuspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/nuget/bootstrap.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/nuget/bootstrap.nuspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-3.3.7/bootstrap-3.3.7/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-3.3.7/bootstrap-3.3.7/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/bootstrap-notify.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/bootstrap-notify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/bootstrap-notify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/bootstrap-notify.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/jshintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/jshintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/test_meteor.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/test_meteor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/bootstrap-notify-master/typings/bootstrap-notify/notify.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/bootstrap-notify-master/typings/bootstrap-notify/notify.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/candidato.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/AUTHORS.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_444444_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_555555_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_777620_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_777777_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_cc0000_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.structure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.structure.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/jquery-ui.theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/jquery-ui.theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/AUTHORS.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_444444_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_555555_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_777620_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_777777_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_cc0000_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.structure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.structure.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/jquery-ui.theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/jquery-ui.theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-dom-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-dom-server.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-dom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-with-addons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react-with-addons.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/build/react.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-click-counter/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-commonjs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-commonjs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-commonjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-commonjs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx-external/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx-external/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx-harmony/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx-precompile/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx-precompile/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic-jsx/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/basic/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-bootstrap/css/example.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-bootstrap/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-bootstrap/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-mobile/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-mobile/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/jquery-mobile/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/quadratic/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/quadratic/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/shared/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/shared/thirdparty/webcomponents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/transitions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/transitions/transition.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/react-0.14.3/examples/webcomponents/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.github/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.github/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.jshintignore" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.jshintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/component.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/component.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/css/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/css/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/css/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/dsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/dsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/hsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/hsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/hy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/tk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/tk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/dist/js/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/dist/js/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/announcements-4.0.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/announcements-4.0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/community.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/community.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/options-old.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/options-old.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/docs/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/docs/options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/select2.jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/select2.jquery.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/banner.end.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/banner.end.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/banner.start.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/banner.start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/jquery.mousewheel.shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/jquery.mousewheel.shim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/jquery.select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/jquery.select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/jquery.shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/jquery.shim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/containerCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/containerCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/dropdownCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/dropdownCss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/initSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/initSelection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/inputData.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/inputData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/matcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/matcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/compat/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/compat/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/maximumInputLength.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/maximumInputLength.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/maximumSelectionLength.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/maximumSelectionLength.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/minimumInputLength.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/minimumInputLength.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/data/tokenizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/data/tokenizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/defaults.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/defaults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/diacritics.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/diacritics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/attachBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/attachBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/attachContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/attachContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/closeOnSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/closeOnSelect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/hidePlaceholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/hidePlaceholder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/infiniteScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/infiniteScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/minimumResultsForSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/minimumResultsForSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/selectOnClose.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/selectOnClose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/dropdown/stopPropagation.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/dropdown/stopPropagation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/dsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/dsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/hsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/hsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/hy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/tk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/tk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/keys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/results.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/results.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/allowClear.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/allowClear.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/clickMask.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/clickMask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/eventRelay.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/eventRelay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/multiple.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/multiple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/placeholder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/selection/stopPropagation.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/selection/stopPropagation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/translation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/select2/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/select2/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/wrapper.end.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/wrapper.end.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/js/wrapper.start.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/js/wrapper.start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/_dropdown.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/_multiple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/_multiple.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/_single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/mixins/_gradients.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/classic/_defaults.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/classic/_defaults.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/classic/_multiple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/classic/_multiple.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/classic/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/classic/_single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/classic/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/classic/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/default/_multiple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/default/_multiple.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/default/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/default/_single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/src/scss/theme/default/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/src/scss/theme/default/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/a11y/search-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/a11y/search-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/a11y/selection-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/a11y/selection-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/array-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/array-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/base-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/base-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/inputData-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/inputData-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/maximumInputLength-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/maximumInputLength-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/maximumSelectionLength-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/maximumSelectionLength-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/minimumInputLength-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/minimumInputLength-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/select-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/select-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/tags-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/tags-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/data/tokenizer-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/data/tokenizer-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/dropdown/dropdownCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/dropdown/dropdownCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/dropdown/positioning-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/dropdown/positioning-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/dropdown/selectOnClose-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/dropdown/selectOnClose-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/dropdown/stopPropagation-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/dropdown/stopPropagation-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/integration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/integration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/integration/dom-changes.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/integration/dom-changes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/integration/jquery-calls.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/integration/jquery-calls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/integration/select2-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/integration/select2-methods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/options/ajax-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/options/ajax-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/options/data-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/options/data-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/options/deprecated-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/options/deprecated-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/options/translation-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/options/translation-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/options/width-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/options/width-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/results/focusing-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/results/focusing-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/allowClear-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/allowClear-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/containerCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/containerCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/multiple-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/multiple-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/placeholder-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/placeholder-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/search-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/search-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/single-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/single-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/selection/stopPropagation-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/selection/stopPropagation-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/unit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/unit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/utils/decorator-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/utils/decorator-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/utils/escapeMarkup-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/utils/escapeMarkup-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/vendor/jquery-1.7.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/vendor/jquery-1.7.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/vendor/qunit-1.23.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/vendor/qunit-1.23.1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/tests/vendor/qunit-1.23.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/tests/vendor/qunit-1.23.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/third_party/select2/vendor/jquery-2.1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/js/select2/vendor/jquery-2.1.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/cadastrarCipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cadastrarCipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/partials/headlinks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/headlinks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidatos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/candidatos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/partials/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/menu.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -730,38 +22,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cipa.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cipa.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="183" column="73" selection-start-line="183" selection-start-column="73" selection-end-line="183" selection-end-column="73" />
+            <state relative-caret-position="780">
+              <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faixaEntity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/entity/faixaEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="negocioEntity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/entity/negocioEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandidatoDAO.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CandidatoDAO.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="791">
+              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidatos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidaturas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/candidaturas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -769,8 +61,8 @@
       <file leaf-file-name="cadastrarCipa.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/cadastrarCipa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="93" column="64" lean-forward="true" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+            <state relative-caret-position="859">
+              <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -778,8 +70,8 @@
       <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            <state relative-caret-position="340">
+              <caret line="20" column="71" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -793,29 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidatoEntity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CipaDAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+            <state relative-caret-position="774">
+              <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VotoDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/VotoDAO.php">
+      <file leaf-file-name="cipaEntity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -855,6 +138,7 @@
       <find>cadastrarAction</find>
       <find>Negocio</find>
       <find>NegocioEntitu</find>
+      <find>load</find>
     </findStrings>
     <replaceStrings>
       <replace>@return UsuarioEntity</replace>
@@ -903,23 +187,24 @@
         <option value="$PROJECT_DIR$/application/models/entity/votoEntity.php" />
         <option value="$PROJECT_DIR$/application/models/UsuarioDAO.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/application/views/candidatos.php" />
         <option value="$PROJECT_DIR$/application/models/VotoDAO.php" />
-        <option value="$PROJECT_DIR$/application/models/CandidatoDAO.php" />
         <option value="$PROJECT_DIR$/application/models/entity/candidatoEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/faixaEntity.php" />
         <option value="$PROJECT_DIR$/application/libraries/react/vencedores.js" />
         <option value="$PROJECT_DIR$/application/views/divulgacao.php" />
         <option value="$PROJECT_DIR$/application/controllers/system.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/views/partials/menu.php" />
         <option value="$PROJECT_DIR$/application/models/entity/cipaEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/usuarioEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/negocioEntity.php" />
         <option value="$PROJECT_DIR$/application/views/partials/headlinks.php" />
         <option value="$PROJECT_DIR$/application/views/cadastrarCipa.php" />
+        <option value="$PROJECT_DIR$/application/views/partials/menu.php" />
         <option value="$PROJECT_DIR$/application/models/CipaDAO.php" />
         <option value="$PROJECT_DIR$/application/controllers/cipa.php" />
+        <option value="$PROJECT_DIR$/application/views/candidatos.php" />
+        <option value="$PROJECT_DIR$/application/views/candidaturas.php" />
+        <option value="$PROJECT_DIR$/application/models/CandidatoDAO.php" />
       </list>
     </option>
   </component>
@@ -975,19 +260,7 @@
               <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
               <item name="cipaja" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cipaja" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cipaja" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cipaja" type="b2602c69:ProjectViewProjectNode" />
@@ -1029,17 +302,17 @@
     <property name="settings.editor.splitter.proportion" value="0.2303207" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\cipaja\application\js" />
-      <recent name="D:\xampp\htdocs\cipaja\application\third_party" />
-      <recent name="D:\xampp\htdocs\cipaja\application\views" />
-      <recent name="D:\xampp\htdocs\cipaja\application\models" />
-      <recent name="D:\xampp\htdocs\cipaja\application\uploads" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\cipaja\application\js" />
       <recent name="D:\xampp\htdocs\CodeIgniter-3.1.8\application\third_party" />
       <recent name="D:\xampp\htdocs\CodeIgniter-3.1.8\application\libraries" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\cipaja\application\views" />
+      <recent name="D:\xampp\htdocs\cipaja\application\js" />
+      <recent name="D:\xampp\htdocs\cipaja\application\third_party" />
+      <recent name="D:\xampp\htdocs\cipaja\application\models" />
+      <recent name="D:\xampp\htdocs\cipaja\application\uploads" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1073,18 +346,20 @@
       <workItem from="1525047052944" duration="6991000" />
       <workItem from="1525210157980" duration="12822000" />
       <workItem from="1525388338159" duration="3515000" />
-      <workItem from="1525918624810" duration="6290000" />
+      <workItem from="1525918624810" duration="6400000" />
+      <workItem from="1526265995628" duration="751000" />
+      <workItem from="1526346015824" duration="3223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66452000" />
+    <option name="totallyTimeSpent" value="70536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16458334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -1138,13 +413,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1329,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/react/vencedores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1378,9 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/js/select2/src/js/select2/data/ajax.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/UsuarioDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1402,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2813">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/VotoDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1419,28 +670,14 @@
     <entry file="file://$PROJECT_DIR$/application/models/entity/faixaEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
+    <entry file="file://$PROJECT_DIR$/application/models/entity/negocioEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/cadastrarCipa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="93" column="64" lean-forward="true" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1451,31 +688,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php___jb_tmp___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/cadastrarCipa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+        <state relative-caret-position="774">
+          <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entity/negocioEntity.php">
+    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/candidaturas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="183" column="73" selection-start-line="183" selection-start-column="73" selection-end-line="183" selection-end-column="73" />
+        <state relative-caret-position="780">
+          <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
         </state>
       </provider>
     </entry>
