@@ -123,13 +123,14 @@ class CipaDAO extends CI_Model
     public function getCandidatosPorCipa()
     {
         $cipas = [];
-        $resultados = $this->db->query(
+        $resultados = $this->db->query(	
             "select
                 cipa.*, usuario.nome
             from
                 cipa
                 left join candidato on candidato.cipa_id = cipa.id
                 left join usuario on usuario.id = candidato.usuario_id
+			where cipa.inicio_candidatura <= curdate() and cipa.fim_votacao >= curdate()
             "
         );
 
