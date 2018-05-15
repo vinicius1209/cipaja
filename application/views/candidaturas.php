@@ -10,30 +10,40 @@
 
 <body>
 <?= $menu ?>
-<div class="container containerCandidatos">
+<div class="container votacaoAberta">
     <div class="row">
-        <?php foreach($cipas as $cipa): ?>
-            <h2><?= $cipa->getId() ?></h2>
-            <small>Candidatura: <?= $cipa->getInicioCandidaturaAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimCandidaturaAsDateTime()->format('d/m/Y') ?></small>
-            <small>Votação: <?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></small>
-
-            <?php foreach ($cipa->getCandidatos() as $candidato): ?>
-            <div class="col-md-6">
-                <div class="thumbnail candidatos">
-                    <img src="<?php echo base_url('img/candidatos.png'); ?>" alt="Lights" style="height:250px" >
-                    <div class="caption">
-                        <p class="candidatoDAO" data-id="<?= $candidato->getId() ?>"> <?= $candidato->getNome() ?></p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <?php endforeach; ?>
-            <?php if ($cipa->getInicioCandidaturaAsDateTime() <= new \DateTime() && new \DateTime() <= $cipa->getFimCandidaturaAsDateTime()): ?>
-            <div>
-                <button type="button" class="btn btn-default candidatarse" data-cipa_id="<?= $cipa->getId()?>">Candidatar-se</button>
-            </div>
-            <?php endif; ?>
-        <?php endforeach; ?>
+	    <div class="col-md-12 text-center">
+			<?php foreach($cipas as $cipa): ?>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="thumbnail votacao"> 
+							<div class="row">                    
+                                    <div class="col-md-12">
+										<h2><?= $cipa->getId() ?></h2>
+										<small>Candidatura: <?= $cipa->getInicioCandidaturaAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimCandidaturaAsDateTime()->format('d/m/Y') ?></small>
+										<small>Votação: <?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></small>
+									</div>
+							</div>
+							<div class="row">
+								<?php foreach ($cipa->getCandidatos() as $candidato): ?>
+                                    <div class="col-md-6"> 
+										<img src="<?php echo base_url('img/candidatos.png'); ?>" alt="Lights" style="height:250px" >
+										<div class="caption">
+											<p class="candidatoDAO" data-id="<?= $candidato->getId() ?>"> <?= $candidato->getNome() ?></p>
+										</div>
+									</div>
+								<?php endforeach; ?>
+							</div>
+							<div class='row'>                 
+                                <div class="col-md-12">
+									<button type="button" class="btn btn-default candidatarse" data-cipa_id="<?= $cipa->getId()?>">Candidatar-se</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		</div>
     </div>
 </div>
 <script type="text/javascript">
