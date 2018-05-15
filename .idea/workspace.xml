@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea270e-249f-415d-936b-069363030546" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/candidaturas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/cipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cipa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/CandidatoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CandidatoDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/CipaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CipaDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/candidatos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/candidatos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/partials/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidaturas.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/candidaturas.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,17 +21,8 @@
       <file leaf-file-name="cipa.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandidatoDAO.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+            <state relative-caret-position="774">
+              <caret line="234" column="30" lean-forward="true" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -49,11 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidaturas.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="candidaturas.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/candidaturas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="587">
+              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CandidatoDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -67,29 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="71" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="headlinks.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/partials/headlinks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CipaDAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+            <state relative-caret-position="307">
+              <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -97,8 +75,8 @@
       <file leaf-file-name="cipaEntity.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="723">
+              <caret line="236" column="33" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -139,6 +117,9 @@
       <find>Negocio</find>
       <find>NegocioEntitu</find>
       <find>load</find>
+      <find>InicioCandida</find>
+      <find>thum</find>
+      <find>.candi</find>
     </findStrings>
     <replaceStrings>
       <replace>@return UsuarioEntity</replace>
@@ -194,17 +175,17 @@
         <option value="$PROJECT_DIR$/application/views/divulgacao.php" />
         <option value="$PROJECT_DIR$/application/controllers/system.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/models/entity/cipaEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/usuarioEntity.php" />
         <option value="$PROJECT_DIR$/application/models/entity/negocioEntity.php" />
         <option value="$PROJECT_DIR$/application/views/partials/headlinks.php" />
         <option value="$PROJECT_DIR$/application/views/cadastrarCipa.php" />
         <option value="$PROJECT_DIR$/application/views/partials/menu.php" />
-        <option value="$PROJECT_DIR$/application/models/CipaDAO.php" />
-        <option value="$PROJECT_DIR$/application/controllers/cipa.php" />
         <option value="$PROJECT_DIR$/application/views/candidatos.php" />
-        <option value="$PROJECT_DIR$/application/views/candidaturas.php" />
+        <option value="$PROJECT_DIR$/application/models/CipaDAO.php" />
+        <option value="$PROJECT_DIR$/application/models/entity/cipaEntity.php" />
         <option value="$PROJECT_DIR$/application/models/CandidatoDAO.php" />
+        <option value="$PROJECT_DIR$/application/controllers/cipa.php" />
+        <option value="$PROJECT_DIR$/application/views/candidaturas.php" />
       </list>
     </option>
   </component>
@@ -348,12 +329,12 @@
       <workItem from="1525388338159" duration="3515000" />
       <workItem from="1525918624810" duration="6400000" />
       <workItem from="1526265995628" duration="751000" />
-      <workItem from="1526346015824" duration="3223000" />
+      <workItem from="1526346015824" duration="7597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70536000" />
+    <option name="totallyTimeSpent" value="74910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -368,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32943678" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,7 +390,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -646,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entity/votoEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/entity/usuarioEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
@@ -681,6 +655,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php___jb_tmp___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/partials/headlinks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -688,13 +672,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/candidatos.php___jb_tmp___">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/entity/votoEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/entity/cipaEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="723">
+          <caret line="236" column="33" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -705,24 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/partials/menu.php">
+    <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="71" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/entity/candidatoEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/CipaDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+        <state relative-caret-position="-8">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -733,24 +721,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/candidaturas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/cipa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
+        <state relative-caret-position="774">
+          <caret line="234" column="30" lean-forward="true" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/CandidatoDAO.php">
+    <entry file="file://$PROJECT_DIR$/application/views/candidaturas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+        <state relative-caret-position="587">
+          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
         </state>
       </provider>
     </entry>
