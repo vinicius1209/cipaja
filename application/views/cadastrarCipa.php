@@ -23,15 +23,7 @@
                     <form method="post" enctype="multipart/form-data" id="cadastrar-votacao">
                         <!-- Lista de opções -->
                         <ul class="list-group">
-                            <li class="list-group-item">
-                                <label>Início da votação</label>
-                                <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="iniciovotacao" name="iniciovotacao">
-                            </li>
-                            <li class="list-group-item">
-                                <label>Término da votação</label>
-                                <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminovotacao" name="terminovotacao">
-                            </li>
-                            <li class="list-group-item">
+							<li class="list-group-item">
                                 <label>Início da candidatura</label>
                                 <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="iniciocandidatura" name="inicio">
                             </li>
@@ -39,6 +31,14 @@
                                 <label>Término da candidatura</label>
                                 <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminocandidatura" name="terminocandidatura">
                             </li>
+                            <li class="list-group-item">
+                                <label>Início da votação</label>
+                                <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="iniciovotacao" name="iniciovotacao">
+                            </li>
+                            <li class="list-group-item">
+                                <label>Término da votação</label>
+                                <input type="text" class="form-control date" placeholder="DD/MM/YYYY" id="terminovotacao" name="terminovotacao">
+                            </li>                            
                             <li class="list-group-item">
                                 <label>Número de funcionários</label>
                                 <input type="number" class="form-control" id="numerofuncionarios" name="numerofuncionarios" min="1">
