@@ -1,9 +1,9 @@
 .votacaoAberta{
-    margin-top: 2em;
+   margin-top: 2em;
 }
 
 .votacao{
-    border-color: #1e820d;
+   border-color: #1e820d;
 }
 
 .overlay {
@@ -18,28 +18,28 @@
     background-color: #1e820d;
   }
 
-  .votacao:hover .overlay {
+.votacao:hover .overlay {
     opacity: 1;
-  }
+}
   
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.text {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+}
 
-  .text2 {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.text2 {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+}
