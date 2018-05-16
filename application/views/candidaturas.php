@@ -19,9 +19,9 @@
 						<div class="thumbnail votacao"> 
 							<div class="row">                    
                                     <div class="col-md-12">
-										<h2><?= $cipa->getId() ?></h2>
-										<small>Candidatura: <?= $cipa->getInicioCandidaturaAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimCandidaturaAsDateTime()->format('d/m/Y') ?></small>
-										<small>Votação: <?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></small>
+										<h2>Lista de Candidatos da Cipa N.° <?= $cipa->getId() ?></h2>
+										<p>Candidatura: <?= $cipa->getInicioCandidaturaAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimCandidaturaAsDateTime()->format('d/m/Y') ?></p>
+										<p>Votação: <?= $cipa->getInicioVotacaoAsDateTime()->format('d/m/Y') ?> - <?= $cipa->getFimVotacaoAsDateTime()->format('d/m/Y') ?></p>
 									</div>
 							</div>
 							<div class="row">
@@ -36,7 +36,7 @@
 							</div>
 							<div class='row'>                 
                                 <div class="col-md-12">
-									<button type="button" class="btn btn-default candidatarse" data-cipa_id="<?= $cipa->getId()?>">Candidatar-se</button>
+									<button type="button" class="btn btn-success btn-lg btn-block candidatarse" data-cipa_id="<?= $cipa->getId()?>">Candidatar-se</button>
 								</div>
 							</div>
 						</div>
@@ -72,19 +72,7 @@
             });
         });
     });
-    $(document).ready(function(){
-
-        $(".thumbnail").on("click", function(){
-
-            // var $thumbnail = $(this);
-            // var $candidato = $thumbnail.find('.candidatoDAO');
-            //
-            //
-            // var candidato_id = $candidato.data('id');
-
-
-        });
-    });
+   
 </script>
 
 </body>
