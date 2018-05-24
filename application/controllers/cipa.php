@@ -233,4 +233,22 @@ class Cipa extends CI_Controller {
         $resultado = $this->candidatoDAO->candidatar($cipa_id, $usuario->getId());
         echo json_encode((int)$resultado);
     }
+	
+	public function negarCandidatura()
+	{
+		$this->load->model("candidatoDAO");
+		$cipa_id = $this->input->post("cipa_id");
+		$candidato_id = $this->input->post("candidato_id");
+		$resultado = $this->candidatoDAO->negarCandidatura($cipa_id, $candidato_id);
+		echo json_encode((int)$resultado);
+	}
+	
+	public function aprovarCandidatura()
+	{
+		$this->load->model("candidatoDAO");
+		$cipa_id = $this->input->post("cipa_id");
+		$candidato_id = $this->input->post("candidato_id");
+		$resultado = $this->candidatoDAO->aprovarCandidatura($cipa_id, $candidato_id);
+		echo json_encode((int)$resultado);
+	}
 }
