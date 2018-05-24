@@ -52,4 +52,16 @@ class CandidatoDAO extends CI_Model
         $result = $this->db->query("insert into candidato(cipa_id, usuario_id) values (?, ?)", [$cipa_id, $usuario_id]);
         return (bool)$result;
     }
+	
+	public function negarCandidatura($cipa_id, $usuario_id)
+    {
+        $result = $this->db->query("update candidato set aprovado = 2 where cipa_id = ? and usuario_id = ?", [$cipa_id, $usuario_id]);
+        return (bool)$result;
+    }
+	
+	public function aprovarCandidatura($cipa_id, $usuario_id)
+    {
+        $result = $this->db->query("update candidato set aprovado = 1 where cipa_id = ? and usuario_id = ?", [$cipa_id, $usuario_id]);
+        return (bool)$result;
+    }
 }
