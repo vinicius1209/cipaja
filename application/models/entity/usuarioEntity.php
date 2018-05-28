@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: User
- * Date: 17/04/2018
- * Time: 22:10
- */
 
 class UsuarioEntity implements JsonSerializable
 {
@@ -87,7 +81,6 @@ class UsuarioEntity implements JsonSerializable
 
     public function jsonSerialize()
     {
-        $cipa = ($this->cipa) ? $this->cipa->getId() : "";
         return [
             "id" => $this->getId(),
             "nome" => $this->getNome(),

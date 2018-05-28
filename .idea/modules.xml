@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CodeIgniter-3.1.8.iml" filepath="$PROJECT_DIR$/.idea/CodeIgniter-3.1.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cipaja.iml" filepath="$PROJECT_DIR$/.idea/cipaja.iml" />
     </modules>
   </component>
 </project>

@@ -5,6 +5,7 @@ class CandidatoEntity extends UsuarioEntity
 {
     protected $cipa;
     protected $votos;
+    protected $aprovacao;
 
     /**
      * @return mixed
@@ -41,6 +42,25 @@ class CandidatoEntity extends UsuarioEntity
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getAprovacao()
+    {
+        return $this->aprovacao;
+    }
+
+    /**
+     * @param mixed $aprovacao
+     * @return CandidatoEntity
+     */
+    public function setAprovacao($aprovacao)
+    {
+        $this->aprovacao = $aprovacao;
+        return $this;
+    }
+
+
     public function jsonSerialize()
     {
         return [
@@ -48,7 +68,8 @@ class CandidatoEntity extends UsuarioEntity
             "votos" => $this->votos,
             "nome" => $this->getNome(),
             "matricula" => $this->getMatricula(),
-            "id" => $this->getId()
+            "id" => $this->getId(),
+            "aprovacao" => $this->getAprovacao()
         ];
     }
 }

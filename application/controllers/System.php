@@ -55,4 +55,30 @@ class System extends CI_Controller {
 //        var_dump("application/uploads/".$arquivo);die;
         force_download(  "application/uploads/".$arquivo, null);
     }
+
+    public function importacao()
+    {
+        $this->load->view('importacao',$this->template);
+    }
+
+    public function importarFuncionarios()
+    {
+        if (empty($_FILES['funcionarios'])){
+            //erro
+        }
+        $arquivoCSV = $_FILES['funcionarios']['tmp_name'][0];
+        $handle = fopen($arquivoCSV, "r");
+
+        $this->load->model("usuarioDAO");
+        $usuarios = [];
+        while(($filesop = fgetcsv($handle, 1000, ",")) !== false) {
+            $usuario = $this->usuarioDAO->newUsuario($filesop[3]);
+            $usuario->setNome($filesop[0]);
+            $usuario->setMatricula($filesop[1]);
+            $usuario->setSenha($filesop[2]);
+            $usuarios[] = clone $usuario;
+        }
+        $status = $this->usuarioDAO->cadastrar($usuarios);
+        echo json_encode($status);
+    }
 }

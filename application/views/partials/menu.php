@@ -16,7 +16,7 @@
                 <li><?= anchor("cipa/cadastrarAction", "Cadastrar Votação") ?></li>
                 <?php //endif; ?>
                 <li><?= anchor("cipa/votacaoAction", "Votação") ?></li>
-                <li><a href="importacao.html">Funcionários</a></li>
+                <li><?= anchor("system/importacao", "Funcionários") ?></li>
                 <li><?= anchor("cipa/divulgacaoAction", "Resultados") ?></li>
                 <li><?= anchor("cipa/candidaturasAction", "Candidaturas") ?></li>
                 <li><?= anchor("system/desconectar", "<i class=\"glyphicon glyphicon-option-horizontal\"></i>") ?></li>

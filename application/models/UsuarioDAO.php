@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("application/models/entity/usuarioEntity.php");
+require_once("application/models/entity/administradorEntity.php");
 
 class UsuarioDAO extends CI_Model
 {
@@ -20,5 +21,29 @@ class UsuarioDAO extends CI_Model
         }
 
         return $usuario;
+    }
+
+    public function newUsuario($isAdministrador = false)
+    {
+        return ($isAdministrador) ? new AdministradorEntity() : new UsuarioEntity();
+    }
+
+    public function cadastrar($usuarios = [])
+    {
+        if (!is_array($usuarios)){
+            $usuarios = [$usuarios];
+        }
+        /**
+         * @var $usuario UsuarioEntity | administradorEntity
+         */
+        $this->db->trans_start();
+        foreach ($usuarios as $usuario) {
+            $this->db->query("insert into usuario(nome, matricula, senha) values(?, ?, ?)", [$usuario->getNome(), $usuario->getMatricula(), $usuario->getSenha()]);
+            if ($usuario instanceof AdministradorEntity) {
+                $this->db->query("insert into administrador(usuario_id) values(last_insert_id())");
+            }
+        }
+        $this->db->trans_complete();
+        return ($this->db->trans_status());
     }
 }
