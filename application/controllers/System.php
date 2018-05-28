@@ -64,7 +64,8 @@ class System extends CI_Controller {
     public function importarFuncionarios()
     {
         if (empty($_FILES['funcionarios'])){
-            //erro
+            echo json_encode(false);
+            return;
         }
         $arquivoCSV = $_FILES['funcionarios']['tmp_name'][0];
         $handle = fopen($arquivoCSV, "r");
