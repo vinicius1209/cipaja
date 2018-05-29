@@ -10,40 +10,46 @@
 
 <body>
 <?= $menu ?>
-<div class="container">
-    <h3 class="text-center">Importação de funcionários</h3>
-    <hr>
-    <div class="col-xs-12">
-    </div>
-</div>
 
-<div class="container">
+<div class="container votacaoAberta">
     <div class="row">
-        <form method="post" enctype="multipart/form-data" id="importar-funcionarios">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
-                <div class="panel panel-default">
-                    <!-- Lista de opções -->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <input type="file" id="upload" class="hide"  />
-                            <span class="glyphicon glyphicon-open-file"></span>
-                            <label for="upload" class="btn btn-large">Escolha um arquivo</label>
-                            <span id="uploadNome"></span>
-                            <div class="material-switch pull-right">
-                                <button type="submit" class="btn btn-success">Upload</button>
+        <div class="col-md-12 text-center">    
+            <div class="row">   
+                <div class="col-md-12">
+                    <div class="thumbnail votacao">
+                        <div class="row">                    
+                            <div class="col-md-12">
+                                <img src="<?php echo base_url('img/funcionarios.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                                <div class="caption overlay">
+                                    <input type="file" id="uploadArquivo" class="inputfuncionarios" />
+                                    <label for="uploadArquivo" id="uploadArquivoDesc">Escolha um Arquivo</label>                                    
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-success btn-block upload">Upload</button>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
     $(function(){
-        $("#importar-funcionarios").on("submit", function(){
+        
+        //$("#importar-funcionarios").on("submit", function(){
+         $(".upload").off("click").on("click", function(){     
+
+            if (document.getElementById("uploadArquivo").value == ''){
+                imprimeNotificacao('erro', 'É necessário carregar o Arquivo antes de dar Upload!');
+                return false;
+            }
+
             var data = new FormData();
-            data.append("funcionarios[]", document.getElementById("upload").files[0]);
+            data.append("funcionarios[]", document.getElementById("uploadArquivo").files[0]);
             $.ajax({
                 type: "post",
                 url: "<?= site_url("System/importarFuncionarios") ?>",
@@ -53,18 +59,18 @@
                 success: function(retorno){
                     retorno = JSON.parse(retorno);
                     if(retorno){
-                        imprimeNotificacao("Usuarios importados com sucesso!", "success");
+                        imprimeNotificacao('sucesso', 'Usuários importados com sucesso!');
                     } else{
-                        imprimeNotificacao("Usuarios nao puderam ser importados", "error");
+                        imprimeNotificacao('erro', 'Usuarios nao puderam ser importados');
                     }
                 }
             });
             return false;
         });
 
-        $("#upload").on("change", function(){
-            var arquivo = document.getElementById("upload").files[0].name;
-            $("#uploadNome").html(arquivo);
+        $("#uploadArquivo").on("change", function(){
+            var arquivo = document.getElementById("uploadArquivo").files[0].name;
+            $("uploadArquivoDesc").html(arquivo);
         });
     });
 </script>
