@@ -1,4 +1,5 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href= <?php echo base_url('img/cipa_icone.png'); ?> >
     <?= script_tag("application/js/jquery/jquery.min.js") ?>
 	<?= link_tag("application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.min.css") ?>
     <?= script_tag("application/js/bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.min.js") ?>
