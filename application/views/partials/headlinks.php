@@ -11,5 +11,6 @@
     <?= link_tag("application/css/candidato.css") ?>
     <?= link_tag("application/css/menu.css") ?>
     <?= link_tag("application/css/votacao.css") ?>
+    <?= link_tag("application/css/importacao.css") ?>
     <?= link_tag("application/js/jquery-ui/jquery-ui.css") ?>
     <?= script_tag("application/js/jquery-ui/jquery-ui.js") ?>

@@ -11,7 +11,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="simulacao.html">Simulação</a></li>
+                <li><a href="">Simulação</a></li>
                 <?php //if ($usuario instanceof \Administrador): ?>
                 <li><?= anchor("cipa/cadastrarAction", "Cadastrar Votação") ?></li>
                 <?php //endif; ?>
