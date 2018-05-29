@@ -28,6 +28,16 @@ class UsuarioDAO extends CI_Model
         return ($isAdministrador) ? new AdministradorEntity() : new UsuarioEntity();
     }
 
+    public function isAdministrador(UsuarioEntity $usuario)
+    {
+        $r = $this->db->query("select * from administrador where usuario_id = ?", [$usuario->getId()]);
+
+        foreach($r->result() as $resultado){
+            return true;
+        }
+        return false;
+    }
+
     public function cadastrar($usuarios = [])
     {
         if (!is_array($usuarios)){

@@ -31,17 +31,20 @@
 										<div class="caption">
 											<p class="candidatoDAO" data-id="<?= $candidato->getId() ?>"> <?= $candidato->getNome() ?></p>
 										</div>
-                                        <?php switch ($candidato->getAprovacao()){
-                                            case 0:
-                                                echo "<button class='btn btn-success aprovarCandidato' data-valor='1' data-id='{$candidato->getId()}'>Aprovar</button>";
-                                                echo "<button class='btn btn-danger aprovarCandidato' data-valor='2' data-id='{$candidato->getId()}'>Reprovar</button>";
-                                                break;
-                                            case 1:
-                                                echo "<span class='btn btn-success'>Aprovado</span>";
-                                                break;
-                                            case 2:
-                                                echo "<span class='btn btn-danger'>Reprovado</span>";
-                                                break;
+                                        <?php
+                                        if ($isAdministrador) {
+                                            switch ($candidato->getAprovacao()) {
+                                                case 0:
+                                                    echo "<button class='btn btn-success aprovarCandidato' data-valor='1' data-id='{$candidato->getId()}'>Aprovar</button>";
+                                                    echo "<button class='btn btn-danger aprovarCandidato' data-valor='2' data-id='{$candidato->getId()}'>Reprovar</button>";
+                                                    break;
+                                                case 1:
+                                                    echo "<span class='btn btn-success'>Aprovado</span>";
+                                                    break;
+                                                case 2:
+                                                    echo "<span class='btn btn-danger'>Reprovado</span>";
+                                                    break;
+                                            }
                                         }
                                         ?>
 									</div>

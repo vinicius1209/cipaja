@@ -12,6 +12,8 @@ class Cipa extends CI_Controller {
         $this->template["menu"] = $this->load->view('partials/menu', '', true);
 		$this->template["head"] = $this->load->view('partials/headlinks', '', true);
         $this->template["usuario"] = unserialize($this->session->userdata('usuario'));
+        $this->load->model("usuarioDAO");
+        $this->template["isAdministrador"] = $this->usuarioDAO->isAdministrador($this->template["usuario"]);
     }
 
     public function votacaoAction()
