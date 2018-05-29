@@ -2,7 +2,7 @@
 <html lang="br">
 
 <head>
-    <title>Votação</title>
+    <title>Divulgação</title>
     <meta charset="utf-8">
     <?= $head ?>
     <?= script_tag("application/libraries/react/vencedores.js") ?>
@@ -10,13 +10,6 @@
 
 <body>
     <?= $menu ?>
-	<div class="container">
-        <h3 class="text-center">Votação em Andamento</h3>
-        <hr>
-        <div class="col-xs-12">
-        </div>
-    </div>
-
     <div class="container">
         <h1>Cipas finalizadas</h1>
 		<div class="row">

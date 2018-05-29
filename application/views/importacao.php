@@ -22,7 +22,7 @@
                                 <img src="<?php echo base_url('img/funcionarios.jpg'); ?>" class="img-fluid" alt="Responsive image">
                                 <div class="caption overlay">
                                     <input type="file" id="uploadArquivo" class="inputfuncionarios" />
-                                    <label for="uploadArquivo" id="uploadArquivoDesc">Escolha um Arquivo</label>                                    
+                                    <label for="uploadArquivo" id="nomeArquivo">Selecione o Arquivo de Importação</label>                                    
                                 </div>
                             </div>
                         </div>
@@ -48,6 +48,11 @@
                 return false;
             }
 
+            if (!(document.getElementById("uploadArquivo").files[0].type == 'application/vnd.ms-excel')){
+                imprimeNotificacao('erro', 'É necessário carregar o Arquivo no formato CSV!');
+                return false;
+            }
+
             var data = new FormData();
             data.append("funcionarios[]", document.getElementById("uploadArquivo").files[0]);
             $.ajax({
@@ -70,7 +75,7 @@
 
         $("#uploadArquivo").on("change", function(){
             var arquivo = document.getElementById("uploadArquivo").files[0].name;
-            $("uploadArquivoDesc").html(arquivo);
+            document.getElementById('nomeArquivo').innerHTML = arquivo;
         });
     });
 </script>

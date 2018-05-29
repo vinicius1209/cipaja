@@ -61,16 +61,25 @@
 
         <div class="row">
             <div class="col-md-12 text-center">           
-                <div class="panel panel-default">        
-                    <li class="list-group-item">
-                        <input type="file" id="uploadEdital" class="hide" />
-                        <span class="glyphicon glyphicon-open-file"></span>
-                        <label for="uploadEdital" class="btn btn-large">Enviar Edital</label>
-                        <span id="editalNome"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <button class="btn btn-success btn-block confirmar">Confirmar</button>
-                    </li>
+                <div class="row">      
+                    <div class="col-md-12">
+                        <div class="thumbnail votacao">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="<?php echo base_url('img/edital.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                                    <div class="caption overlay">
+                                        <input type="file" id="uploadEdital" class="inputfuncionarios" />
+                                        <label for="uploadEdital" id="nomeArquivo">Selecionar Edital</label>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-success btn-block confirmar">Confirmar</button>
+                                </div>
+                            </div>
+                        <div>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -111,6 +120,9 @@
                 if (document.getElementById("uploadEdital").value == ''){
                     imprimeNotificacao('erro', 'É necessário carregar o Edital!');
                     return false;
+                }else if (!(document.getElementById("uploadEdital").files[0].type == 'application/pdf')){
+                    imprimeNotificacao('erro', 'O formato do Edital deve ser PDF!');
+                    return false;
                 }
 
               var data = new FormData();
@@ -144,9 +156,8 @@
               dateFormat: "dd/mm/yy"
           });
           $("#uploadEdital").on("change", function(){
-              alert("lol");
               var arquivo = document.getElementById("uploadEdital").files[0].name;
-              $("#editalNome").html(arquivo);
+              document.getElementById('nomeArquivo').innerHTML = arquivo;
           });
       });
   </script>
