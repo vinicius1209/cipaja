@@ -16,3 +16,48 @@
 	opacity: 1;
     cursor: pointer;
 }
+
+/*********** CANDIDATURAS **************/
+
+.candidaturaInfo1{
+    text-align: center;
+    font-size: 35px; 
+    top: 20%;   
+}
+
+.candidaturaInfo2{
+    text-align: center;
+    font-size: 25px;  
+    top: 70%;  
+}
+
+.containerCandidaturas{
+    margin-top: 2em;
+}
+
+.candidaturas{
+    border-color: #1e820d;  
+}
+
+.colunaCandidatura:hover .overlayCandidatura{
+	opacity: 1;
+    cursor: default;
+}
+
+.colunaCandidatura:hover .imagemCandidatura {
+    opacity: 0.3;
+  }
+  
+.overlayCandidatura {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.imagemCandidatura{
+    margin-left: 10px;
+}
