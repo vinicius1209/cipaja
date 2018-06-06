@@ -13,7 +13,15 @@ class CipaDAO extends CI_Model
 
     public function getCipasEmAndamento()
     {
-        $resultados = $this->db->query("select * from cipa where inicio_votacao <= curdate() and fim_votacao >= curdate()");
+        $resultados = $this->db->query("
+			select
+				*
+			from
+				cipa
+			where
+				date_format(inicio_votacao, '%Y-%m-%d') <= curdate()
+				and date_format(fim_votacao, '%Y-%m-%d') >= curdate()
+		");
         $cipas = [];
         foreach ($resultados->result() as $resultado){
             $cipa = new CipaEntity();
@@ -130,7 +138,9 @@ class CipaDAO extends CI_Model
                 cipa
                 left join candidato on candidato.cipa_id = cipa.id
                 left join usuario on usuario.id = candidato.usuario_id
-			where cipa.inicio_candidatura <= curdate() and cipa.fim_votacao >= curdate()
+			where
+				date_format(cipa.inicio_candidatura, '%Y-%m-%d') <= curdate()
+				and date_format(cipa.fim_votacao, '%Y-%m-%d') >= curdate()
             "
         );
 
