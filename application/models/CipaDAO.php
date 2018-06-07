@@ -133,7 +133,7 @@ class CipaDAO extends CI_Model
         $cipas = [];
         $resultados = $this->db->query(	
             "select
-                cipa.*, usuario.nome
+                cipa.*, usuario.id usuario_id, usuario.nome, candidato.aprovado
             from
                 cipa
                 left join candidato on candidato.cipa_id = cipa.id
@@ -161,6 +161,8 @@ class CipaDAO extends CI_Model
             if ($resultado->nome){
                 $candidato = new CandidatoEntity();
                 $candidato->setNome($resultado->nome);
+                $candidato->setId($resultado->usuario_id);
+                $candidato->setAprovacao($resultado->aprovado);
                 $cipas[$resultado->id]->addCandidato($candidato);
             }
         }

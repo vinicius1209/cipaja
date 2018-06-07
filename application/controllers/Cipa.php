@@ -223,7 +223,17 @@ class Cipa extends CI_Controller {
     {
         $this->load->model("cipaDAO");
         $candidatosPorCipa = $this->cipaDAO->getCandidatosPorCipa();
+        $usuarioCandidaturas = [];
+        /**
+         * @var $candidato CandidatoEntity
+         */
+        foreach ($candidatosPorCipa as $cipa) {
+            foreach ($cipa->getCandidatos() as $candidato) {
+                $usuarioCandidaturas[$cipa->getId()] = ($this->template["usuario"]->getId() == $candidato->getId());
+            }
+        }
         $this->template["cipas"] = $candidatosPorCipa;
+        $this->template["usuarioCandidaturas"] = $usuarioCandidaturas;
         $this->load->view("candidaturas", $this->template);
     }
 
@@ -242,7 +252,7 @@ class Cipa extends CI_Controller {
 		$cipa_id = $this->input->post("cipa_id");
 		$candidato_id = $this->input->post("candidato_id");
 		$valor = $this->input->post("valor");
-		if ($valor == '1') {
+		if ($valor === '1') {
             $resultado = $this->candidatoDAO->aprovarCandidatura($cipa_id, $candidato_id);
         } else{
             $resultado = $this->candidatoDAO->negarCandidatura($cipa_id, $candidato_id);

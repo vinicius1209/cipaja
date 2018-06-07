@@ -143,11 +143,7 @@
                   data: data,
                   success: function(retorno){
                       retorno = JSON.parse(retorno);
-                      if(retorno.tipo === "erro"){
-                          imprimeNotificacao(retorno.mensagem, "error");
-                      } else{
-                          imprimeNotificacao("Cipa cadastrada com sucesso!", "success");
-                      }
+                      imprimeNotificacao(retorno.tipo, retorno.mensagem);
                   }
               });
               return false;
